@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.colors{
+  color: #212035;
+  color: #595269;
+  color: #afddd2;
+}
+*{
+  transition: 0.2s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+span, p{
+  font-family: 'Lekton', sans-serif;
+
+}
+h1{
+  font-family: 'Expletus Sans', cursive;
+  color: transparent;
+}
+button{
+  font-family: 'Expletus Sans', cursive;
+}
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+body{
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.div-ripped{
+  background-color: #212035;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  background-position: 100%;
+}
+.arrow-back{
+  width: 100%;
+  text-align: center;
+}
+.arrow-back h1{
+  transform: rotate(90deg);
+  color: #212035;
+  letter-spacing: 0.3rem;
+  padding: 0.5em;
+}
+
+
+.section-one{
+  text-align: center;
+  min-height: 300px;
+  margin: 0px;
+  padding-top: 6rem;
+}
+.section-one span{
+  color: #d13f12;
+  font-size: 30px;
+}
+.first-title {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    #595269 2px,
+    #595269 4px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 65px;
+  letter-spacing: 8px;
+  cursor: pointer;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+	.first-title{
+    font-size: 55px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section-one span{
+    font-size: 15px;
+  }
+	.first-title{
+    font-size: 30px;
+  }
 }
