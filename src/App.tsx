@@ -17,20 +17,79 @@ function App() {
           <h1>DOWN</h1>
           <Icon.ArrowDown color='#212035'/>
         </div>
+        <div className='ripped'>
+          <p>a</p>
+          <p>a</p>
 
+          <p>a</p>
+
+          <p>a</p>
+
+v
+<p>a</p>
+
+<p>a</p>
+
+<p>a</p>
+
+<p>a</p>
+<p>a</p>
+<p>a</p>
+
+<p>a</p>
+
+<p>a</p>
+
+<p>a</p>
+
+<p>a</p>
+
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+<p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
+     
+          <p>a</p>
+
+        </div>
         <div className='div-ripped'>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
-          <h1>aaa</h1>
+          <div className="div-one">
+            <h1>
+              Create and customize your fighting pet
+            </h1>
+            <section className='elegant-separator'></section>
+            
+            <p>asdasdasdaads asdasdasda adsadasd asd asdas das dasd asd sdsdasdasdasd asd asdasd asd asdasd asd sdas dasdas dasd </p>
+            <img className='image-one' src='https://i.pinimg.com/originals/ee/52/86/ee5286dd15598789e61ed4f01ee3ba25.jpg'/>
+
+          </div>          
           
         </div>
 

@@ -29,15 +29,46 @@ p {
 body{
   margin: 0px;
 }
-
+.ripped{
+  background-color: #11111b;
+background-image: url("https://www.transparenttextures.com/patterns/groovepaper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
 .div-ripped{
-  background-color: #212035;
-  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  background-color: #000000;
   background-position: 100%;
+}
+
+.div-ripped div{
+  position:relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.div-ripped .div-one{
+  padding-bottom: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.div-ripped div .image-one{
+  position: absolute;
+  right: 1rem;
+  top: -2rem;
+  width: 60%;
+}
+.div-ripped div h1{
+  width: 30%;
+  color: white;
+}
+.div-ripped div p{
+  font-weight: 600;
+  font-size: 1rem;
+  width: 30%;
+  color: #b9a1a1;
 }
 .arrow-back{
   width: 100%;
   text-align: center;
+  margin-bottom: 4rem;
 }
 .arrow-back h1{
   transform: rotate(90deg);
@@ -73,9 +104,30 @@ body{
   margin: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+.elegant-separator{
+  width: 100% - 1rem;
+  background-color: #d13f12;
+  height: 2px;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 650px) {
 	.first-title{
     font-size: 55px;
+  }
+  .div-ripped div h1{
+    width: 100%;
+  }
+  .div-ripped div p{
+    width: 100%;
+    font-size: 13px;
+    padding: 0rem;
+  }
+  .div-ripped div .image-one{
+    position: static;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 400px) {
