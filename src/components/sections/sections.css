@@ -1,0 +1,137 @@
+
+.section-one{
+    text-align: center;
+    min-height: 300px;
+    margin: 0px;
+    padding-top: 6rem;
+    z-index: 1;
+}
+.section-one span{
+    color: #d13f12;
+    font-size: 30px;
+}
+.first-title {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 2px,
+      #10052b 2px,
+      #000000 4px
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+    letter-spacing: 8px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.box{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -o-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    background-color: #000000;
+}
+.section-twoo{
+    text-align: center;
+    padding: 30%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    z-index: 1;
+}
+.section-twoo h1{
+    font-size: 2rem;
+    color: #d13812;
+}
+.section-twoo p{
+    padding: 2rem;
+    color: rgb(223, 219, 219);
+    font-size: 1rem;
+    
+}
+
+.section-twoo button{
+	cursor: pointer;
+    color: #d13812; ;
+	font-size: 0.8rem;
+	border: 1px solid #d13812;;
+	border-radius: 1rem ;
+	padding: 0.5rem 0.7rem;
+	margin: 2rem ;
+	transition: 0.5s;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+	background-color: transparent;
+}
+.section-twoo button:hover{
+    background-color: transparent;
+    color: rgb(0, 0, 0) ;
+	background-color: #d13812 !important;
+}
+
+.section-three{
+    padding-top: 3rem;
+    text-align: center;
+}
+.section-three h1{
+    font-size: 2rem;
+    color: #11111b;
+    
+}
+
+
+.awssld{
+    --organic-arrow-color : #d13812 !important;
+    --control-bullet-color: #11111b !important;
+    --control-bullet-active-color: #d13812 !important;
+    --slider-transition-duration: 300ms !important;
+}
+.awssld__bullets button{
+    width: 30px !important;
+    height: 4px !important;
+    border-radius: 1rem !important;
+}
+.awssld__content{
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+.awssld__content img{
+    
+    filter: invert(35%);
+    z-index: 2;
+}
+
+@media only screen and (max-width: 650px) {
+    .first-title{
+        font-size: 55px;
+    }
+    .div-ripped div h1{
+        width: 100%;
+    }
+    .div-ripped div p{
+        width: 100%;
+        font-size: 13px;
+        padding: 0rem;
+    }
+    .div-ripped div .image-one{
+        position: static;
+        width: 100%;
+    }
+    .section-twoo{
+        padding: 10%;
+    }
+}
+@media only screen and (max-width: 400px) {
+  .section-one span{
+    font-size: 15px;
+  }
+	.first-title{
+    font-size: 30px;
+  }
+}

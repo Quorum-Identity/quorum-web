@@ -1,11 +1,12 @@
 .navbar{
     padding-top: 0.5rem ;
     padding-bottom: 0.5rem ;
-    background-color: rgb(255, 255, 255)  !important;
+    background-color: rgba(255, 255, 255, 0)  !important;
 	display: flex;
 	justify-content: space-between;
 	margin: 0px;
 	width: 100%;
+	z-index: 2;
 }
 .navbar-brand{
     padding: 0rem;
@@ -17,13 +18,14 @@
 .navbar-brand h1{
 	margin: 0px ;
 	margin-left: 1rem;
+	font-size: 2rem;
 	color: #212035;
 	letter-spacing: 0.2rem;
 }
 .navbar-items h1{
 	cursor: pointer;
     color: #212035 ;
-	font-size: 1.1rem;
+	font-size: 0.8rem;
 	border-radius: 1rem ;
 	padding: 0.5rem 0.7rem;
 	margin: 0.2rem ;
@@ -31,10 +33,13 @@
 	font-weight: 700;
 	letter-spacing: 0.3rem;
 }
+.navbar-items h1:hover{
+	color: #d13812;
+}
 .navbar-items button{
 	cursor: pointer;
     color: #212035 ;
-	font-size: 1.1rem;
+	font-size: 0.8rem;
 	border: 1px solid #212035;
 	border-radius: 1rem ;
 	padding: 0.5rem 0.7rem;

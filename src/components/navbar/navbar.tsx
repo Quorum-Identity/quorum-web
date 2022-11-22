@@ -9,14 +9,14 @@ const NavbarApp = () => {
     return (
         <div className="navbar">
             <div className="navbar-brand">
-                <h1>STUDIO</h1>
+                <h1>Broadway</h1>
             </div>
             <div className="navbar-items">
 
                 
-                <h1>Download</h1>
+                <h1>Development</h1>
                 <h1>About</h1>
-                <button>User</button>
+                <button>Downloads</button>
 
                 
             </div>
