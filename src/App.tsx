@@ -13,6 +13,7 @@ function App() {
         <SectionTwoo/>
         <SectionThree/>
       </Container>
+      <SectionOne/>
     </div>
   );
 }
