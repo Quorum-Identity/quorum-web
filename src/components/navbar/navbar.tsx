@@ -16,12 +16,11 @@ const NavbarApp = () => {
                 
                 <h1>Development</h1>
                 <h1>About</h1>
-                <button>Downloads</button>
+                <button>Download</button>
 
                 
             </div>
             <Icon.Menu color='#212035'/>
-                
         </div>
     )
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import NavbarApp from './components/navbar/navbar';
-import { Container } from 'rsuite';
+import { Container, Footer } from 'rsuite';
 import {SectionOne, SectionThree, SectionTwoo} from './components/sections/sections';
+import FooterApp from './components/footer/footer';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
         <SectionTwoo/>
         <SectionThree/>
       </Container>
-      <SectionOne/>
+      <FooterApp/>
     </div>
   );
 }

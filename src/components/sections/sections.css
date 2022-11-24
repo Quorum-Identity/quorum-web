@@ -50,14 +50,15 @@
     padding: 2rem;
     color: rgb(223, 219, 219);
     font-size: 1rem;
-    
+    text-align:justify;
+    word-break:keep-all !important;
 }
 
 .section-twoo button{
 	cursor: pointer;
     color: #d13812; ;
 	font-size: 0.8rem;
-	border: 1px solid #d13812;;
+	border: 1px solid #d13812;
 	border-radius: 1rem ;
 	padding: 0.5rem 0.7rem;
 	margin: 2rem ;
@@ -77,11 +78,23 @@
     text-align: center;
 }
 .section-three h1{
+    padding: 30%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     font-size: 2rem;
     color: #11111b;
     
 }
-
+.section-three p{
+    padding: 30%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #3a3a3c;
+    text-align:justify;
+    word-break:keep-all !important;
+    
+}
 
 .awssld{
     --organic-arrow-color : #d13812 !important;
@@ -124,6 +137,9 @@
         width: 100%;
     }
     .section-twoo{
+        padding: 10%;
+    }
+    .section-three h1, .section-three p{
         padding: 10%;
     }
 }

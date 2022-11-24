@@ -23,7 +23,7 @@ const SectionTwoo = () => {
         <div className='box'>
             <div className='section-twoo'>
                 <h1> What you want a good time?</h1>
-                <p>Try one of our products and we'll make sure you have a good time, then. How do I do it?</p>
+                <p>So how do I have a good time with you? It's just a friend. Keep going down and you will find everything you need. Playing our games is super easy!</p>
                 <button>Fun with me!</button>
             </div>
         </div>
@@ -35,14 +35,12 @@ const SectionThree = () => {
 
     return (
         <div className='section-three'>
-            <h1>Am I going fun with?</h1>
+            <h1>Yes, good times!</h1>
+            <p>We love developing videogames, we have different projects that we work very hard on and we look forward to having you try them.</p>
+            <p>Our most recent release will be in January, a multiplayer mode where you choose the fate of your character. You can have fun with friends or create your path in this Roleplay mode. from working in a company or different jobs to managing your business or faction for the power struggle.</p>
             <div>
                 
-                <AwesomeSlider>
-                    <div data-src="https://media.discordapp.net/attachments/1041281604338851915/1044499309892210758/sa-mp-001.png" />
-                    <div data-src="https://media.discordapp.net/attachments/1041281604338851915/1044499310240342036/sa-mp-002.png" />
-                    <div data-src="https://media.discordapp.net/attachments/1041281604338851915/1044499310538141777/sa-mp-003.png" />
-                </AwesomeSlider>
+                
             </div>
         </div>
     )
