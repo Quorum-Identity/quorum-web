@@ -1,8 +1,7 @@
 import React from 'react';
 import * as Icon from 'react-feather';
 import './sections.css';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+import ManhattanBanner from '../../assets/mbanner.png';
 
 const SectionOne = () => {
     return (
@@ -38,8 +37,29 @@ const SectionThree = () => {
             <h1>Yes, good times!</h1>
             <p>We love developing videogames, we have different projects that we work very hard on and we look forward to having you try them.</p>
             <p>Our most recent release will be in January, a multiplayer mode where you choose the fate of your character. You can have fun with friends or create your path in this Roleplay mode. from working in a company or different jobs to managing your business or faction for the power struggle.</p>
-            <div>
-                
+            <div className="presentation-cards">
+                <div className="presentation-exact-card">
+                    <div className="presentation-brand-card">
+                        <img src={ManhattanBanner}/>
+                    </div>
+                    <h1>Manhattan</h1>
+                    <p>You start your character in a world set in 2000s New York, Manhattan. You choose which path to take</p>
+                    
+                </div>
+                <div className="presentation-exact-card">
+                    <div className="presentation-brand-card">
+                        <img src={ManhattanBanner}/>
+                    </div>
+                    <h1>Manhattan - Roleplay Game</h1>
+                    
+                </div>
+                <div className="presentation-exact-card">
+                    <div className="presentation-brand-card">
+                        <img src={ManhattanBanner}/>
+                    </div>
+                    <h1>Manhattan - Roleplay Game</h1>
+                    
+                </div>
                 
             </div>
         </div>

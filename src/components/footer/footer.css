@@ -23,7 +23,11 @@
     padding: 0.5rem;
     border-radius: 100%;
     background-color: rgb(40, 38, 38);
-
+    
+}
+.footer-brand svg:hover{
+    background-color: #D13030;
+    stroke: black;
 }
 .footer-items{
     padding: 1rem;
