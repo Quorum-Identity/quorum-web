@@ -9,7 +9,7 @@ const NavbarApp = () => {
     return (
         <div className="navbar">
             <div className="navbar-brand">
-                <h1>Broadway</h1>
+                <h1>Broadway Games</h1>
             </div>
             <div className="navbar-items">
 

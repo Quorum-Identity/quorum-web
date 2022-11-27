@@ -1,20 +1,23 @@
-import React from 'react';
-import NavbarApp from './components/navbar/navbar';
-import { Container, Footer } from 'rsuite';
-import {SectionOne, SectionThree, SectionTwoo} from './components/sections/sections';
-import FooterApp from './components/footer/footer';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import About from "./routes/about";
+import ManhattanSection from "./routes/games/manhattan";
+import Home from './routes/home';
 function App() {
   return (
     <div className="App">
-      <NavbarApp/>
-      <img className="effectBackground" src='https://dogstudio.co/app/themes/portfolio-2018/static/assets/images/menu/background-xxs.png'/>
-      
-      <Container >
-        <SectionOne/>
-        <SectionTwoo/>
-        <SectionThree/>
-      </Container>
-      <FooterApp/>
+      <Router>
+        
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/store/manhattan" element={<ManhattanSection/>}/>
+          </Routes>
+      </Router>
     </div>
   );
 }
