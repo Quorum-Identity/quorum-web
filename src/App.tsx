@@ -4,18 +4,16 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import About from "./routes/about";
-import ManhattanSection from "./routes/games/manhattan";
-import Home from './routes/home';
+import Dashboard from "./routes/dashboard";
+
 function App() {
   return (
     <div className="App">
       <Router>
         
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/store/manhattan" element={<ManhattanSection/>}/>
+            <Route path="/" element={<Dashboard/>}/>
+
           </Routes>
       </Router>
     </div>

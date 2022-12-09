@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+.navbar{
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.navbar *{
+    transition: 0.5s;
+}
+.navbar-items{
+    display: flex;
+}
+.navbar-item{
+    cursor: pointer;
+    margin-left: 1rem;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--secondary-color);
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: .5rem ;
+    padding-right: .5rem ;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    font-size: 0.8rem;
+    border: 1px solid transparent;
+}
+.navbar-item.background{
+    border: 1px solid var(--secondary-color);
+    border-bottom: 0px;
+}
+.navbar-item:hover{
+    border-top: 1px solid var(--secondary-color);
+}
+.navbar-item.background:hover{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.navbar-brand{
+    display: flex;
+}
+.navbar-brand h1{
+    font-family: 'Indie Flower', cursive;
+    color: var(--secondary-color);
+    font-weight: 900;
+}

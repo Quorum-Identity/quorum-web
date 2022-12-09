@@ -1,0 +1,25 @@
+.container.dashboard{
+    border-right: 1px solid var(--black-color);
+    padding-top: 4rem;
+}
+
+.dashboard-section-one{
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 15%;
+}
+.dashboard-section-one h1{
+    font-size: 3rem;
+    color: var(--black-color);
+    line-height: 4rem;
+}
+
+.dashboard-section-one p{
+    margin-top: 2rem;
+    margin-left: .4rem;
+    font-size: .9rem;
+    color: var(--secondary-color);
+    text-align:justify;
+    word-wrap: keep-all;
+    line-height: 2rem;
+}
