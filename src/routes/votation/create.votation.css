@@ -1,0 +1,52 @@
+.container.votation{
+    padding: 2rem;
+
+}
+.create-votation{
+    justify-content: center;
+    display: flex;
+    transform: translateY(50%);
+}
+
+.create-votation .votation-select{
+    padding: 2rem;
+    border-left: 1px solid var(--black-color);
+    border-right: 1px solid var(--black-color);
+    border-top: 1px solid var(--black-color);
+    border-bottom: 0rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    cursor: pointer;
+}
+.create-votation .votation-select:hover{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.16rgba(218, 222, 153, 0.224),153,1) 35%, rgba(0, 0, 0, 0.189) 100%);
+}
+.create-votation .votation-select:hover h1{
+    color: var(--white-color);
+}
+.create-votation .votation-select.first{
+    border-left: 0rem;
+    
+}
+.create-votation .votation-select.last{
+    border-right: 0rem;
+    
+}
+
+.next-button{
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+    padding: 1rem 2rem 1rem 2rem;
+    color: var(--white-color);
+    border-radius: 1rem;
+    background-color: var(--black-color);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.next-button:hover{
+    border: 1px solid var(--black-color);
+    background-color: transparent;
+    color: var(--black-color);
+    font-weight: 900;
+}

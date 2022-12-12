@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .navbar{
     padding-top: .3rem;
     padding-bottom: .3rem;
@@ -20,12 +20,12 @@
     background-color: transparent;
     border-color: transparent;
     color: var(--secondary-color);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding-left: .5rem ;
     padding-right: .5rem ;
-    font-weight: 600;
+    font-weight: 900 !important;
     letter-spacing: .2rem;
-    font-size: 0.8rem;
+    font-size: .9rem;
     border: 1px solid transparent;
 }
 .navbar-item.background{
@@ -43,7 +43,8 @@
     display: flex;
 }
 .navbar-brand h1{
-    font-family: 'Indie Flower', cursive;
-    color: var(--secondary-color);
-    font-weight: 900;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
 }

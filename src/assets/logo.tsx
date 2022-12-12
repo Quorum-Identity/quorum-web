@@ -16,4 +16,5 @@ const Logo = ({color, size}:LogoProps) => {
     )
 }
 
+
 export default Logo;

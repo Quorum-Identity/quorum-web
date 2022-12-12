@@ -5,6 +5,7 @@ import {
   Link
 } from "react-router-dom";
 import Dashboard from "./routes/dashboard";
+import CreateVotation from "./routes/votation/create.votation";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         
           <Routes>
             <Route path="/" element={<Dashboard/>}/>
-
+            <Route path="/create" element={<CreateVotation/>}/>
           </Routes>
       </Router>
     </div>

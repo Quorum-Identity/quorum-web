@@ -1,6 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root{
   --black-color: #070606;
   --white-color: #FFFDFA;
@@ -9,19 +8,24 @@
   
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Barlow', sans-serif;
   margin: 0px;
   letter-spacing: 0.3rem;
   
 }
 p{
   line-height: 2rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1rem;
   margin: 0px;
+}
+button{
+  font-family: 'Montserrat', sans-serif;
 }
 body{
   margin: 0rem;
-  background-color: #f5f0f3;
+  background: rgb(227,228,182);
+  background: linear-gradient(90deg, rgb(230, 231, 202) 0%, rgba(249,246,248,1) 35%, rgba(249,236,245,1) 100%);
 }
 *{
   transition: 0.2s;

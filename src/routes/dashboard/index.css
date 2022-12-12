@@ -1,25 +1,37 @@
 .container.dashboard{
+    border-top-right-radius: 5rem;
     border-right: 1px solid var(--black-color);
     padding-top: 4rem;
 }
 
 .dashboard-section-one{
-    width: 70%;
-    padding-left: 5%;
-    padding-right: 15%;
+    display: flex;
 }
 .dashboard-section-one h1{
+    padding: 2rem;
     font-size: 3rem;
     color: var(--black-color);
     line-height: 4rem;
+    padding-right: 7rem;
+    padding-top: 0rem;
+    padding-bottom:0rem;
 }
 
 .dashboard-section-one p{
-    margin-top: 2rem;
-    margin-left: .4rem;
+    padding: 2rem;
+    padding-top: 2rem;
     font-size: .9rem;
     color: var(--secondary-color);
     text-align:justify;
     word-wrap: keep-all;
     line-height: 2rem;
+    padding-bottom: 30rem;
+    padding-right: 7rem;
+}
+.dashboard-section-one .justice-wallpaper{
+    background-image: url('../../assets//firstwallpaper.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    opacity: 0.7;
 }
