@@ -6,7 +6,7 @@
     margin-right: 3%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.079);
 }
 .navbar *{
     transition: 0.5s;
@@ -28,9 +28,9 @@
     font-size: .9rem;
     border: 1px solid transparent;
 }
-.navbar-item.background{
-    border: 1px solid var(--secondary-color);
-    border-bottom: 0px;
+
+.navbar-item.background a{
+    color: var(--secondary-color);
 }
 .navbar-item:hover{
     border-top: 1px solid var(--secondary-color);

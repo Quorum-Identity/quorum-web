@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo';
 import './index.css';
 const Navbar = () => {
@@ -9,7 +10,7 @@ const Navbar = () => {
         <div className='navbar-items'>
         <button className="navbar-item">Contact</button>
             
-            <button className="navbar-item background">Create votation</button>
+            <button className="navbar-item background"><Link to={'/create'} >Create votation</Link></button>
         </div>
         
         
