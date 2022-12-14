@@ -20,12 +20,12 @@ p{
   margin: 0px;
 }
 button{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 body{
   margin: 0rem;
   background: rgb(227,228,182);
-  background: linear-gradient(90deg, rgb(230, 231, 202) 0%, rgba(249,246,248,1) 35%, rgba(249,236,245,1) 100%);
+  background: linear-gradient(90deg, rgb(230, 231, 202) 0%, rgba(249,246,248,1) 35%, rgb(248, 244, 248) 100%);
 }
 *{
   transition: 0.2s;
@@ -34,6 +34,38 @@ body{
   margin-left: 3%;
   margin-right: 5%;
 }
+
+input{
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid var(--black-color);
+  background-color: transparent;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+input:focus{
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+
+.m05{
+  margin: 2px;
+}
+.m1{
+  margin: 5px;
+}
+
+.widthFull{
+  width: 100%;
+}
+.displayFlex{
+  display: flex;
+}
+
 @media only screen and (max-width: 650px) {
 	
 }

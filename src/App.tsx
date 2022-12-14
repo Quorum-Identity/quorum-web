@@ -5,7 +5,7 @@ import {
   Link
 } from "react-router-dom";
 import Dashboard from "./routes/dashboard";
-import CreateVotation from "./routes/votation/create.votation";
+import CreateVotation from "./routes/votation";
 
 function App() {
   return (
