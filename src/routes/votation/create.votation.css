@@ -3,12 +3,15 @@
 
 }
 .create-votation .select-type-votation{
-    justify-content: center;
     margin-top: 3rem;
+    text-align: center;
 }
-.create-votation .select-type-votation{
+
+.create-votation .select-type-votation-child{
+    justify-content: center;
     display: flex;
 }
+
 
 .create-votation .select-type-votation .votation-select{
     padding: 2rem;
@@ -131,7 +134,7 @@
     
 }
 .add-options-votation .optionSelected{
-    border-bottom: 1px solid var(--black-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.106);
     padding: 1rem;
 }
 
@@ -165,7 +168,7 @@
 }
 
 @media only screen and (max-width: 850px) {
-	.create-votation .select-type-votation{
+	.create-votation .select-type-votation-child{
         display: block;
     }
     .configurate-dates-votation form{

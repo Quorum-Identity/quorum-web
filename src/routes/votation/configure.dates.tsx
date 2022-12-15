@@ -15,19 +15,14 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
             <form onSubmit={handleSubmit((data) => console.log(data))}>
 
 
-
+                <p className="m1">Image banner</p>
+                <input className="m1" {...register('image', { required: true })} type="file" />
                 <p className="m1">Votation title</p>
                 <input className="m1" {...register('name', { required: true })} type="text" />
                 <p className="m1">Date start</p>
-                <div className="displayFlex widthFull" >
-                    <input className="m1" {...register('name', { required: true })} type="time" />
-                    <input className="m1" {...register('name', { required: true })} type="date" />
-                </div>
+                <input className="m1" {...register('name', { required: true })} type="datetime-local" />
                 <p className="m1">Date end</p>
-                <div className="displayFlex widthFull" >
-                    <input className="m1" {...register('name', { required: true })} type="time" />
-                    <input className="m1" {...register('name', { required: true })} type="date" />
-                </div>
+                <input className="m1" {...register('name', { required: true })} type="datetime-local" />
                 {errors.lastName && <p>Last name is required.</p>}
                 {errors.age && <p>Please enter number for age.</p>}
                 
