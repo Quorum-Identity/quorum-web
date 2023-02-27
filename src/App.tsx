@@ -1,3 +1,4 @@
+import { ChakraBaseProvider } from "@chakra-ui/react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,15 +10,18 @@ import CreateVotation from "./routes/votation";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        
-          <Routes>
-            <Route path="/" element={<Dashboard/>}/>
-            <Route path="/create" element={<CreateVotation/>}/>
-          </Routes>
-      </Router>
-    </div>
+    <ChakraBaseProvider>
+
+      <div className="App">
+        <Router>
+          
+            <Routes>
+              <Route path="/" element={<Dashboard/>}/>
+              <Route path="/create" element={<CreateVotation/>}/>
+            </Routes>
+        </Router>
+      </div>
+    </ChakraBaseProvider>
   );
 }
 

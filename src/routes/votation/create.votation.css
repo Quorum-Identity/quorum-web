@@ -1,6 +1,10 @@
 .container.votation{
     padding: 2rem;
 
+
+}
+.votation h1{
+    color: white;
 }
 .create-votation .select-type-votation{
     margin-top: 3rem;
@@ -15,9 +19,9 @@
 
 .create-votation .select-type-votation .votation-select{
     padding: 2rem;
-    border-left: 1px solid var(--black-color);
-    border-right: 1px solid var(--black-color);
-    border-top: 1px solid var(--black-color);
+    border-left: 1px solid var(--white-color);
+    border-right: 1px solid var(--white-color);
+    border-top: 1px solid var(--white-color);
     border-bottom: 0rem;
     border-radius: 1rem 1rem 0rem 0rem;
     cursor: pointer;
@@ -28,15 +32,16 @@
 }
 
 .create-votation .select-type-votation .votation-select.select{
-    background: rgb(0,0,0);
+    background: rgb(255, 254, 254);
     
 }
 .create-votation .select-type-votation .votation-select.select h1{
-    color: var(--white-color);
+    color: var(--black-color);
 }
-.create-votation .select-type-votation .votation-select.select p{
-    color: rgb(213, 209, 214);
+.create-votation .select-type-votation .votation-select p{
+    color: grey;
 }
+
 
 
 .create-votation .select-type-votation .votation-select:hover h1{
@@ -66,9 +71,9 @@
     cursor: pointer;
 }
 .next-button:hover{
-    border: 1px solid var(--black-color);
+    border: 1px solid var(--white-color);
     background-color: transparent;
-    color: var(--black-color);
+    color: var(--white-color);
     font-weight: 900;
 }
 
@@ -82,9 +87,9 @@
     cursor: pointer;
 }
 .back-button:hover{
-    border: 1px solid var(--black-color);
+    border: 1px solid var(--white-color);
     background-color: transparent;
-    color: var(--black-color);
+    color: var(--white-color);
     font-weight: 900;
 }
 
@@ -125,6 +130,7 @@
 .add-options-votation .add-icon span{
     width: auto !important;
     height: auto !important;
+    margin: 0px;
     
 }
 .add-options-votation .add-icon svg{
@@ -136,6 +142,7 @@
 .add-options-votation .optionSelected{
     border-bottom: 1px solid rgba(0, 0, 0, 0.106);
     padding: 1rem;
+    justify-content: space-between;
 }
 
 .add-options-votation .optionSelected span{
