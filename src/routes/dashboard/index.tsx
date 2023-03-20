@@ -6,8 +6,6 @@ import IonIcon from "@reacticons/ionicons";
 import FooterApp from "../../components/footer/footer";
 
 
-import { Box, Center, Accordion, Heading, Text, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel} from '@chakra-ui/react'
-import ItemAccordion from "../../components/item_accordion";
 
 
 
@@ -50,6 +48,19 @@ const Dashboard = () => {
         </div>
         
 
+        
+        <div className="boxes-dashboard">
+          <div className="box"></div>
+
+          <div className="container">
+            <div className="panel-dashboard displayFlex displayBlockResponsive separation-top">
+              <img className="separation-top" src="https://microblink.com/wp-content/uploads/2023/02/BLINKID-img04-1-e1677213100175.png" alt="image-panel"></img>
+              <div className="separation-top">
+                <h1 className="fz1-5 p2"> Podras gestionar todo desde nuestra aplicacion</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="boxes-dashboard">
           <div className="box1"></div>
 
@@ -60,18 +71,6 @@ const Dashboard = () => {
               </div>
               <img className="separation-top" src="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/img/scr-img/vertical-content.png" alt="image-panel"></img>
               
-            </div>
-          </div>
-        </div>
-        <div className="boxes-dashboard">
-          <div className="box"></div>
-
-          <div className="container">
-            <div className="panel-dashboard displayFlex displayBlockResponsive separation-top">
-              <img className="separation-top" src="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/img/scr-img/vertical-content.png" alt="image-panel"></img>
-              <div className="separation-top">
-                <h1 className="fz1-5 p2"> Podras gestionar todo desde nuestra aplicacion</h1>
-              </div>
             </div>
           </div>
         </div>
@@ -106,27 +105,7 @@ const Dashboard = () => {
             <h1 className="fz1 separation-top primary-color">¿Tienes alguna duda?</h1>
             <h1 className="fz2">Preguntas Frecuentes</h1>
 
-            <div className="separation-top alignCenterItems">
-              <Accordion defaultIndex={[0]} allowMultiple w={{base: "100%", lg: "100%"}}>
-                <ItemAccordion 
-                    question="* Almacena los datos de tus votantes en un lugar seguro:"
-                    answer="Debido a que nuestros servicios estan realizados en blockchain este sistema hace que sean inmubles, por lo tanto una vez enviado un voto al servidor no hay posibilidad de volver para atras ni eliminarlo de la red."/>
-                <ItemAccordion 
-                  question="* Gestione tus votaciones en un panel intuitivo:"
-                  answer="Debido a que nuestros servicios estan realizados en blockchain este sistema hace que sean inmubles, por lo tanto una vez enviado un voto al servidor no hay posibilidad de volver para atras ni eliminarlo de la red."/>     
-                <ItemAccordion 
-                  question="* Obten estadisticas en tiempo real:"
-                  answer="Debido a que nuestros servicios estan realizados en blockchain este sistema hace que sean inmubles, por lo tanto una vez enviado un voto al servidor no hay posibilidad de volver para atras ni eliminarlo de la red."/>
-                <ItemAccordion 
-                  question="* Comparte de manera publica votacion para que sea vista:"
-                  answer="Debido a que nuestros servicios estan realizados en blockchain este sistema hace que sean inmubles, por lo tanto una vez enviado un voto al servidor no hay posibilidad de volver para atras ni eliminarlo de la red."/>
-                <ItemAccordion
-                  question="* Integracion con aplicaciones web:"
-                  answer="Debido a que nuestros servicios estan realizados en blockchain este sistema hace que sean inmubles, por lo tanto una vez enviado un voto al servidor no hay posibilidad de volver para atras ni eliminarlo de la red."/>
-                
-                
-              </Accordion>
-            </div>
+            
             
           
             

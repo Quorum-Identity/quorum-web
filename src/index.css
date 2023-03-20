@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 body{
-  background-color: #111111 !important;
+  background-color: #0a0612 !important;
   margin: 0px;
 
 }
@@ -12,7 +12,7 @@ body{
 :root{
   --background-color : #111111;
   --black-color: #1e203d;
-  --white-color: #ffffff;
+  --white-color: #FFFFF0;
   --primary-color: #F77D8B;
   --secondary-color: #6648FC;
   
@@ -30,7 +30,6 @@ a{
   font-family: 'Work Sans', sans-serif;
 }
 p{
-  color: rgb(183, 178, 178);
   text-align:justify;
   word-wrap: keep-all;
   font-size: 0.8rem;
@@ -39,6 +38,10 @@ p{
   letter-spacing: 0.1rem;
   font-weight: 700;
   margin: 0px;
+}
+p, span{
+  color: #8e7fa8;
+
 }
 button{
   font-family: 'Work Sans', sans-serif !important;
@@ -54,23 +57,23 @@ button{
 }
 .app-subtitle{
   font-size: 1rem;
-  color: grey;
+  color: #5d34a5;
 }
 input{
-  padding: 1rem 1rem 1rem 1rem;
-  border: 1px solid var(--white-color);
-  background-color: transparent;
-  color: var(--white-color);
-  border-radius: 1rem;
-  width: 100%;
+  padding: 1rem .5rem 1rem .5rem ;
+  border: 1px solid var(--white-color) ;
+  background-color: transparent ;
+  color: var(--white-color) ;
+  border-radius: 1rem ;
+  width: 100% ;
 }
 
 input:focus{
-  padding: 1rem 1rem 1rem 1rem;
-  border: 1px solid var(--primary-color);
-  outline: none;
+  border: 1px solid var(--primary-color) ;
+  outline: none !important;
   background-color: transparent;
-  border-radius: 1rem;
+  border-radius: 1rem !;
+  color: var(--primary-color) !;
 }
 .alignCenterItems{
   margin-left: auto;

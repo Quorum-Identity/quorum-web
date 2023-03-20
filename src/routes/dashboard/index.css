@@ -77,7 +77,7 @@
 .social-button:hover{
   background-color: black;
 }
-.social-button svg, span{
+.social-button svg, .social-button span{
   margin-right: 0.5rem;
   color: white;
   width: 2rem !important;

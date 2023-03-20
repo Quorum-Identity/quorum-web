@@ -7,7 +7,7 @@ const SelectTypeVotation: FunctionComponent<SwitchComponentChildrenType> = () =>
     return (
       <div>
         <div className="select-type-votation">
-          <p className="m1">Votation type</p>
+          <p className="m1"></p>
           <div className="select-type-votation-child">  
           <div className={activeComponent === 0 ? "votation-select select first" : "votation-select first" } onClick={() => setActiveComponent(0)}>
             <h1>Registered</h1>
