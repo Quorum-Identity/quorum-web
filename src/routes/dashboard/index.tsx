@@ -15,113 +15,70 @@ const Dashboard = () => {
     return (
       <div className="dashboard-content">
         <Navbar/>
-        <div className="circle-background"></div>          
-        <div className="container"> 
-
-          <div className="displayFlex between">
-            <div className="w50 w100Responsive">
-              <h1 className="fz3">Verifica la identidad de tus votantes en</h1>
-              <h1 className="animate-title fz3">Blockchain</h1>
-              <p className="fz1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div className="displayFlex displayBlockResponsive">
-              <button className="social-button displayFlex">
-                <IonIcon name="logo-apple"/>
-                <div>
-                  <p>Download on the</p>
-                  <h1> App Store</h1>
-
+    
+          <div className="presentation mt1 displayFlex">
+            <div className="container ">
+              <h1 className="m1" style={{color: 'white'}}>Vote with your phone from anywhere in the world</h1>
+              <p className="m1 mt1" style={{color: 'white'}}>With an application that is responsible for the security and transparency of electoral processes. Adding a simple and intuitive user interface</p>
+              <button className="btn btn-primary-full"><IonIcon name="logo-google-playstore"/> Get It on Google Play</button>
+              <button className="btn btn-primary"><IonIcon name="logo-apple"/> Available on the App Store</button>
+            </div>
+              <video playsInline autoPlay muted loop><source src="https://static-content.regulaforensics.com/FACE%20SDK%2013%20Feb.mp4"/> Your browser does not support the video tag. </video>
+          </div>
+          <div className="displayFlex between imagesinvert">
+            <img width='26%' src="https://upload.wikimedia.org/wikipedia/commons/0/04/Milei_spot_2021.png"/>
+            <img width='24%' src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Mauricio_Macri_2016.jpg"/>
+            <img width='25%' src="https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg"/>
+            <img width='25%' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Presidente_Bukele_%28cropped%29.jpg/1200px-Presidente_Bukele_%28cropped%29.jpg"/>
+          </div>
+          <div className="container ">
+              <h1 className="m1 mt2" style={{color: 'black'}}>There are more than 36 million voters only in Argentina</h1>
+              <p className="m1" style={{color: 'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>  
+          <div className="presentation mt2">
+            <div className="container">
+              <h1 style={{color: 'white'}}> Technologies we use</h1>
+              <div className="displayFlex between">
+                <div className="technologie">
+                  <IonIcon name="document-outline"/>
+                  <h2 >Document type identification</h2>
+                  <p>Verify data from 12,000+ international documents using AI and ML.</p>
                 </div>
-              </button>
-              <button className="social-button displayFlex">
-                <IonIcon name="logo-google-playstore"/>
-                <div>
-                  <p>Available on the</p>
-                  <h1> Google Play</h1>
-
+                <div className="technologie">
+                  <IonIcon name="person-circle-outline"/>
+                  <h2 >Livennes Detection</h2>
+                  <p>Examine the liveness of a person with AI and machine learning algorithms.</p>
                 </div>
-              </button>
+                <div className="technologie">
+                  <IonIcon name="search-outline"/>
+                  <h2 >Optical Character Recognition (OCR)</h2>
+                  <p>Convert typed or printed text into digital data.</p>
+                </div>
               </div>
+              <div className="displayFlex between">
+                <div className="technologie">
+                  <IonIcon name="document-outline"/>
+                  <h2 >Document type identification</h2>
+                  <p>Verify data from 12,000+ international documents using AI and ML.</p>
+                </div>
+                <div className="technologie">
+                  <IonIcon name="person-circle-outline"/>
+                  <h2 >Livennes Detection</h2>
+                  <p>Examine the liveness of a person with AI and machine learning algorithms</p>
+                </div>
+                <div className="technologie">
+                  <IonIcon name="search-outline"/>
+                  <h2 >Optical Character Recognition (OCR)</h2>
+                  <p>Convert typed or printed text into digital data.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container mt2">
               
-            </div>
-            <img className="displayNoneResponsive" src="https://www.yabok-tech.io/static/media/magicflex.ac7fd4ee.png" width="400px" height="543px"  alt="phoneImage"/>
+              <h1 className="m1 mt2" style={{color: 'black'}}>The KYC process is provided by Regula</h1>
+              <p className="m1" style={{color: 'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-        </div>
-        
-
-        
-        <div className="boxes-dashboard">
-          <div className="box"></div>
-
-          <div className="container">
-            <div className="panel-dashboard displayFlex displayBlockResponsive separation-top">
-              <img className="separation-top" src="https://microblink.com/wp-content/uploads/2023/02/BLINKID-img04-1-e1677213100175.png" alt="image-panel"></img>
-              <div className="separation-top">
-                <h1 className="fz1-5 p2"> Podras gestionar todo desde nuestra aplicacion</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="boxes-dashboard">
-          <div className="box1"></div>
-
-          <div className="container">
-            <div className="panel-dashboard displayFlex displayBlockResponsive separation-top">
-              <div className="separation-top">
-                <h1 className="fz1-5 p2"> Tambien te brindamos utilidades adicionales en nuestro panel web </h1>
-              </div>
-              <img className="separation-top" src="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/img/scr-img/vertical-content.png" alt="image-panel"></img>
-              
-            </div>
-          </div>
-        </div>
-          
-        <div className="container">
-          <div>
-            <h1 className="fz1 separation-top primary-color">Rapido e intuitivo</h1>
-            <h1 className="fz2">Verificacion en tiempo real</h1>
-            <div className="displayFlex displayBlockResponsive separation-top">
-              <div className="cards-setps-dashboard separation-top one">
-              <span>1</span>
-              <h1>Escanea el documento en la parte frontal con la camara de tu celular.</h1>    
-              </div>
-              <div className="cards-setps-dashboard separation-top twoo">
-                <span>2</span>
-                <h1>Escanea el documento en la parte trasera.</h1>    
-              </div>
-            </div>
-            <div className="displayFlex displayBlockResponsive">
-              <div className="cards-setps-dashboard separation-top three">
-              <span>3</span>
-              <h1>Ahora vamos con tu cara para verificar que eres tu!.</h1>    
-              </div>
-              <div className="cards-setps-dashboard separation-top four">
-                <span>4</span>
-                <h1>Accede tus votaciones habilitadas para comenzar a usar la aplicacion.</h1>    
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h1 className="fz1 separation-top primary-color">¿Tienes alguna duda?</h1>
-            <h1 className="fz2">Preguntas Frecuentes</h1>
-
-            
-            
-          
-            
-          
-          </div>
-          
-
-          <div className="separation-top"></div>
-          <div className="separation-top"></div>            
-
-        </div>
-        <div className="circle-background"></div>          
-
-        <div className="contact">
-          
-        </div>
         <FooterApp/>
       </div>
     );

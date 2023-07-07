@@ -1,51 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 body{
-  background-color: #0a0612 !important;
+  background-color: #ffffff !important;
   margin: 0px;
-
+  z-index: -1;
 }
 .container{
   margin: 5%;
 }
 :root{
   --background-color : #111111;
-  --black-color: #1e203d;
+  --black-color: #0c0c0c;
   --white-color: #FFFFF0;
   --primary-color: #F77D8B;
   --secondary-color: #6648FC;
   
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Varela Round', sans-serif;
-  margin: 0px;
-  color: var(--white-color);
-  letter-spacing: 0.3rem;
+  font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+  color: var(--black-color);
   
 }
 a{
   text-decoration: none;
   color: auto;
-  font-family: 'Work Sans', sans-serif;
-}
-p{
-  text-align:justify;
-  word-wrap: keep-all;
-  font-size: 0.8rem;
-  line-height: 2rem;
-  font-family: 'Karla', sans-serif;
-  letter-spacing: 0.1rem;
-  font-weight: 700;
-  margin: 0px;
-}
-p, span{
-  color: #8e7fa8;
-
+  font-family: 'Roboto', sans-serif;
 }
 button{
-  font-family: 'Work Sans', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
+p{
+  font-weight: 100 !important;
+  text-align:justify;
+  word-wrap: keep-all;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Oswald', sans-serif;}
+
 
 *{
   transition: 0.2s;
@@ -104,6 +96,12 @@ input:focus{
 .w50{
   width: 50%;
 }
+.w20{
+  width: 20%;
+}
+.w80{
+  width: 95%;
+}
 .m05{
   margin: 2px;
 }
@@ -117,10 +115,13 @@ input:focus{
   padding: 20px;
 }
 .m1{
-  margin: 5px;
+  margin: 1rem;
 }
 .mt1{
   margin-top: 5px;
+}
+.mt2{
+  margin-top: 5rem;
 }
 .mb1{
   margin-bottom: 5px;
@@ -136,6 +137,30 @@ input:focus{
 }
 .between{
   justify-content: space-between;
+}
+
+.btn{
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+
+}
+.btn-primary{
+  background-color: transparent;
+  border: 1px solid #F76301;
+  color: #F76301;
+  border-radius: .5rem;
+}
+.btn-primary-full{
+  background-color: #F76301;
+  border: 1px solid #F76301;
+  color: #111111;
+  border-radius: .5rem;
+}
+.btn-primary:hover, .btn-primary-full:hover{
+  transform: scale(1.1);
+
 }
 @media only screen and (max-width: 650px) {
 	.displayNoneResponsive{

@@ -1,24 +1,26 @@
 import React from "react";
 import  './footer.css';
-import { Youtube } from "react-feather";
+import  logo  from "../../assets/logo2.png"
 const FooterApp = () => {
     return (
-        <div className="footer">
+        <div className="footer displayFlex between">
             
-            
+            <div>
+                <img style={{filter: 'saturate(2)'}} width="310px" height="80px" alt="logo" src={logo}/>
+            </div>
             <div className="footer-items">
                 <div className="section">
-                    <h1>Util Links</h1>
+                    <h1>UTIL LINKS</h1>
                     <p>Our team</p>
                     <p>Work with us</p>
                 </div>
                 <div className="section">
-                    <h1>Contact</h1>
+                    <h1>CONTACT</h1>
                     <p>canitrotbartolome@gmail.com</p>
                     <p>+39 333584593</p>
                 </div>
                 <div className="section">
-                    <h1>Resources</h1>
+                    <h1>RESOURCES</h1>
                     <p>Privacy Policy</p>
                     <p>Community Rules</p>
                 </div>
