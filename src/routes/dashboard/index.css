@@ -1,7 +1,5 @@
 .presentation {
   background-color: #211236;
-  padding-bottom: 3rem;
-  padding-top: 1rem;
 }
 .imagesinvert img{
   filter: blur(3px);
@@ -11,6 +9,7 @@
 
 .technologie{
   text-align: center !important;
+  align-items: center !important;
   margin: 2rem;
 }
 .technologie span{

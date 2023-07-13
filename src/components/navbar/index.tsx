@@ -11,7 +11,6 @@ const Navbar = () => {
         </div>
         <div className='navbar-items'>
           <button className="navbar-item">Company</button>
-          <button className="navbar-item background"><Link to={'/create'} >Contact</Link> </button>
           <button className="navbar-item">Try Online <IonIcon name="open-outline" /> </button>
 
         </div>
