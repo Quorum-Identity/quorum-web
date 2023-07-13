@@ -3,7 +3,7 @@ import  './footer.css';
 import  logo  from "../../assets/logo2.png"
 const FooterApp = () => {
     return (
-        <div className="footer displayFlex between">
+        <div className="footer displayFlex between displayBlockResponsive">
             
             <div>
                 <img style={{filter: 'saturate(2)'}} width="310px" height="80px" alt="logo" src={logo}/>

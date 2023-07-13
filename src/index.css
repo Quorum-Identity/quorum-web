@@ -75,6 +75,9 @@ input:focus{
 .center{
   text-align: center;
 }
+.left{
+  text-align: left;
+}
 .separation-top{
   margin-top: 4rem;
 }
@@ -167,7 +170,7 @@ input:focus{
     display:none;
   }
   .w100Responsive{
-    width:100%;
+    width:100% !important;
   }
   .displayBlockResponsive{
     display: block;

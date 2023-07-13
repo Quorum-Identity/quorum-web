@@ -25,3 +25,18 @@
   font-size: 1rem;
   color:rgb(226, 222, 222);
 }
+
+
+
+@media only screen and (max-width: 650px) {
+  .modified{
+    display: none !important;
+  }
+  .containerpurple{
+    padding: .5rem !important;
+    text-align: left;
+  }
+  .presentation video{
+    width: 60%;
+  }
+}
