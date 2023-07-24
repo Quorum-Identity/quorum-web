@@ -6,7 +6,7 @@ body{
   z-index: -1;
 }
 .container{
-  margin: 5%;
+  margin: 2rem;
 }
 :root{
   --background-color : #111111;
@@ -18,7 +18,7 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto', sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
   color: var(--black-color);
   
 }
@@ -74,9 +74,13 @@ input:focus{
 
 .center{
   text-align: center;
+  align-items: center;
 }
 .left{
   text-align: left;
+}
+.right{
+  text-align: right;
 }
 .separation-top{
   margin-top: 4rem;
@@ -135,7 +139,18 @@ input:focus{
 .displayFlex{
   display: flex;
 }
+
+
+.flexEquals{
+
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: left;
+}
 .primary-color{
+ 
+ 
   color: var(--primary-color)
 }
 .between{
@@ -163,24 +178,20 @@ input:focus{
 }
 .btn-primary:hover, .btn-primary-full:hover{
   transform: scale(1.1);
-
 }
-@media only screen and (max-width: 650px) {
-	.displayNoneResponsive{
-    display:none;
-  }
+@media  (max-width: 650px) {
+	
   .w100Responsive{
     width:100% !important;
+    margin: 0px !important;
+  }
+  .displayFlexResponsive{
+    display: flex !important;
   }
   .displayBlockResponsive{
-    display: block;
+    display: block !important;
   }
-}
-@media only screen and (max-width: 400px) {
   .displayNoneResponsive{
-    display:none;
-  }
-  .w100Responsive{
-    width:100%;
+    display:none !important;
   }
 }

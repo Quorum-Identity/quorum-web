@@ -15,8 +15,8 @@ const Dashboard = () => {
     return (
       <div className="">
         <Navbar/>
-          <div style={{position: 'relative'}} className="mt1 presentation displayFlex center">
-            <div className="w50 w100Responsive">
+          <div style={{position: 'relative'}} className="mt1 presentation displayFlex center displayBlockResponsive">
+            <div className="w50 w100Responsive displayNoneResponsive">
               <img className="modified"  style={{
                 transform: 'translate(-50%)',
                 maxWidth: '90vw'
@@ -34,7 +34,7 @@ const Dashboard = () => {
 
 
             </div>
-            <img width='100%' max-width='100%' height='100%' style={{zIndex: '0',position: "absolute", margin: '0rem'}} src="https://cdn.discordapp.com/attachments/1128670410058252369/1128833332017369268/3.png"/>
+            <img className="displayNoneResponsive" width='100%' max-width='100%' height='100%' style={{zIndex: '0',position: "absolute", margin: '0rem'}} src="https://cdn.discordapp.com/attachments/1128670410058252369/1128833332017369268/3.png"/>
             
           </div>
           <div >
@@ -47,7 +47,7 @@ const Dashboard = () => {
           </div> 
           <div style={{paddingTop: '3rem', paddingBottom: '3rem'}} className="presentation mt2 displayFlex displayBlockResponsive">
             <div className="container w50 w100Responsive ">
-              <h1 className="m1" style={{color: 'white'}}>Vote with your phone from anywhere in the world</h1>
+              <h1 className="m1" style={{color: 'white'}}>With an easy user interface</h1>
               <p className="m1 mt1" style={{color: 'white'}}>With an application that is responsible for the security and transparency of electoral processes. Adding a simple and intuitive user interface</p>
               <button className="btn btn-primary-full"><IonIcon name="logo-google-playstore"/> Get It on Google Play</button>
               <button className="btn btn-primary"><IonIcon name="logo-apple"/> Available on the App Store</button>
@@ -55,7 +55,11 @@ const Dashboard = () => {
               <video  playsInline autoPlay muted loop><source src="https://static-content.regulaforensics.com/FACE%20SDK%2013%20Feb.mp4"/> Your browser does not support the video tag. </video>
           </div>
           
-           
+          <div className="container mt2">
+              
+              <h1 className="m1 mt2" style={{color: 'black'}}>The KYC process is provided by Regula Forensics</h1>
+              <p className="m1" style={{color: 'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
           <div className="presentation" style={{paddingTop: '3rem'}}>
             <div className="container">
               <h1 style={{color: 'white'}}> Technologies we use</h1>
@@ -96,14 +100,52 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="container mt2">
-              
-              <h1 className="m1 mt2" style={{color: 'black'}}>The KYC process is provided by Regula Forensics</h1>
-              <p className="m1" style={{color: 'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div className="container mt2">
+          <div className="w100  flexEquals between displayBlockResponsive">
+            <div className="displayFlexResponsive center" style={{display: "inline-block"}}>
+              <div className="social-icon lk">
+                <IonIcon name="logo-linkedin"></IonIcon>
+              </div>
+              <div className="social-icon fb">
+                <IonIcon name="logo-facebook"></IonIcon>
+              </div>
+              <div className="social-icon ig">
+                <IonIcon name="logo-instagram"></IonIcon>
+              </div>
+              <div className="social-icon ds">
+                <IonIcon name="logo-discord"></IonIcon>
+              </div>
+                    
+                    
+            </div>
+            <div className="w100">
+                
+                <h1 className="m1" style={{color: 'black'}}>Contact</h1>
+                <div className="displayFlex w100">
+                  <div className="m1 w100">
+                    <p>Full name</p>
+                    <input className="input" placeholder=""/>
+                  </div>
+                  <div>
 
+                  </div>
+                  <div className="m1 w50">
+                    <p>Email</p>
+                    <input className="input" placeholder=""/>
+                  </div>
+                  <div>
+
+                  </div>
+                </div>
+                
+                <div className="w100 right">
+                  <button className="btn btn-primary">Send<IonIcon style={{marginLeft: '1rem'}} name="chevron-forward-outline"/> </button>
+
+                </div>
+            </div>
+            <div/>
           </div>
+
+          
         <FooterApp/>
       </div>
     );
