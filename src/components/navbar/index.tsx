@@ -1,8 +1,9 @@
 import IonIcon from '@reacticons/ionicons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './index.css';
 const Navbar = () => {
+  const navigate = useNavigate();
     return (
       <div className="navbar">
         <div className="navbar-brand">
@@ -10,8 +11,10 @@ const Navbar = () => {
           
         </div>
         <div className='navbar-items'>
-          <button className="navbar-item">Try Online <IonIcon name="open-outline" /> </button>
+            <button className="navbar-item">
+              <a href='https://faceapi.regulaforensics.com/'>Try Online <IonIcon name="open-outline" /> </a>
 
+            </button>
         </div>
         
         

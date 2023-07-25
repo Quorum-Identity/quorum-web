@@ -100,7 +100,8 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="w100  flexEquals between displayBlockResponsive">
+          <div style={{margin: '0px', backgroundColor: '#eeeeee', paddingTop: '3rem', paddingBottom: '5rem'}}>
+          <div style={{margin: '0px'}}  className="w100  flexEquals between displayBlockResponsive">
             <div className="displayFlexResponsive center" style={{display: "inline-block"}}>
               <div className="social-icon lk">
                 <IonIcon name="logo-linkedin"></IonIcon>
@@ -117,9 +118,9 @@ const Dashboard = () => {
                     
                     
             </div>
-            <div className="w100">
+            <div className="w100" style={{borderRadius: '.5rem', backgroundColor: 'white'}}>
                 
-                <h1 className="m1" style={{color: 'black'}}>Contact</h1>
+                <h1 className="m1" style={{color: 'black', fontSize: '2rem'}}>Can I buy you a coffee with us?</h1>
                 <div className="displayFlex w100">
                   <div className="m1 w100">
                     <p>Full name</p>
@@ -144,6 +145,7 @@ const Dashboard = () => {
             </div>
             <div/>
           </div>
+          </div> 
 
           
         <FooterApp/>
