@@ -76,4 +76,7 @@
   .presentation video{
     width: 60%;
   }
+  .fzResponsive{
+    font-size: 3rem !important;
+  }
 }

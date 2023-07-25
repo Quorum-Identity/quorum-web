@@ -62,7 +62,7 @@ const Dashboard = () => {
           </div>
           <div className="presentation" style={{paddingTop: '3rem'}}>
             <div className="container">
-              <h1 style={{color: 'white'}}> Technologies we use</h1>
+              <h1 className="fzResponsive" style={{color: 'white'}}> Technologies we use</h1>
               <div className="displayFlex between displayBlockResponsive">
                 <div className="technologie">
                   <IonIcon name="document-outline"/>
@@ -130,7 +130,7 @@ const Dashboard = () => {
                   </div>
                   <div className="m1 w50">
                     <p>Email</p>
-                    <input className="input" placeholder=""/>
+                    <input style={{paddingRight: '0rem'}} className="input" placeholder=""/>
                   </div>
                   <div>
 
