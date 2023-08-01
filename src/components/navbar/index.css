@@ -1,10 +1,12 @@
 .navbar{
     padding-top: .0rem;
     padding-bottom: .0rem;
-    margin-left: 3%;
-    margin-right: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    border: 0px;
 }
 .navbar *{
     transition: 0.5s;

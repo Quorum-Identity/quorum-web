@@ -5,6 +5,7 @@ import ConfigureVotationDates from './configure.dates';
 import SelectTypeVotation from './select.type';
 import './create.votation.css';
 import AddVotationOptions from './add.options';
+import Footer from '../../components/footer/footer';
 
 type OptionVotation  = { 
   title: string,
@@ -63,7 +64,7 @@ const CreateVotation = () => {
             </div>
         </div>
         
-        
+        <Footer/>
       </div>
   );
 }

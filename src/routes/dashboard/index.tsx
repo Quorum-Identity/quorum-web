@@ -43,7 +43,7 @@ const Dashboard = () => {
           </div>
           <div className="container ">
               <h1 className="m1 mt2" style={{color: 'black'}}>There are more than 36 million voters only in Argentina</h1>
-              <p className="m1" style={{color: 'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="m1" style={{color: 'black'}}>Worldwide, billions of people exercise their right to vote in various electoral processes. From presidential elections to local elections, voting is a powerful tool to express the will of the citizens and determine the political direction of nations. Active voter participation is essential to uphold democracy and ensure that everyone's voices are heard in the decision-making process.</p>
           </div> 
           <div style={{paddingTop: '3rem', paddingBottom: '3rem'}} className="presentation mt2 displayFlex displayBlockResponsive">
             <div className="container w50 w100Responsive ">
@@ -58,7 +58,12 @@ const Dashboard = () => {
           <div className="container mt2">
               
               <h1 className="m1 mt2" style={{color: 'black'}}>The KYC process is provided by Regula Forensics</h1>
-              <p className="m1" style={{color: 'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="m1" style={{color: 'black'}}>The KYC (Know Your Customer) process is a set of measures and verifications that companies implement to confirm the identity of their customers. It is designed to prevent money laundering, terrorist financing, and other illicit activities while ensuring transparency and security in business relationships. During the KYC process, customers are required to provide information and documents that allow the company to reliably verify their identity before initiating any form of business relationship or transaction.
+
+
+
+
+</p>
           </div>
           <div className="presentation" style={{paddingTop: '3rem'}}>
             <div className="container">

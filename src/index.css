@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 body{
-  background-color: #ffffff !important;
+  background-color: #eeeeee !important;
   margin: 0px;
   z-index: -1;
 }
 .container{
-  margin: 2rem;
+  margin: 4rem;
 }
 :root{
   --background-color : #111111;
@@ -53,9 +53,9 @@ p{
 }
 input{
   padding: 1rem .5rem 1rem .5rem ;
-  border: 1px solid var(--white-color) ;
+  border: 1px solid var(--black-color) ;
   background-color: transparent ;
-  color: var(--white-color) ;
+  color: var(--black-color) ;
   border-radius: 1rem ;
   width: 100% ;
 }
@@ -180,7 +180,9 @@ input:focus{
   transform: scale(1.1);
 }
 @media  (max-width: 650px) {
-	
+	.container{
+    margin: 2rem;
+  }
   .w100Responsive{
     width:100% !important;
     margin: 0px !important;

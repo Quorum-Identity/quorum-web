@@ -36,7 +36,7 @@
 }
 .input:hover, .input:focus{
   border: 1px solid #F76301 !important;
-  color: white;
+  color: #F76301;
 }
 
 .social-icon{

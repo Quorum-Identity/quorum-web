@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
         <div className='navbar-items'>
             <button className="navbar-item">
-              <a href='https://faceapi.regulaforensics.com/'>Try Online <IonIcon name="open-outline" /> </a>
+              <a style={{color: 'black'}} href='https://faceapi.regulaforensics.com/'>Try Online <IonIcon name="open-outline" /> </a>
 
             </button>
         </div>

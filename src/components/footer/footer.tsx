@@ -2,6 +2,7 @@ import React from "react";
 import  './footer.css';
 import  logo  from "../../assets/logo2.png"
 import IonIcon from "@reacticons/ionicons";
+import { Link } from "react-router-dom";
 const FooterApp = () => {
     return (
         <div className="footer">
@@ -24,7 +25,7 @@ const FooterApp = () => {
                 </div>
                 <div className="section">
                     <h1>RESOURCES</h1>
-                    <p>Privacy Policy</p>
+                    <Link to="/privacy-rules"><p>Privacy Policy</p></Link>
                     <p>Community Rules</p>
                 </div>
 
