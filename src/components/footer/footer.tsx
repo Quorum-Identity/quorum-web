@@ -1,6 +1,6 @@
 import React from "react";
 import  './footer.css';
-import  logo  from "../../assets/logo2.png"
+import  logo  from "../../assets/logomodern2.png"
 import IonIcon from "@reacticons/ionicons";
 import { Link } from "react-router-dom";
 const FooterApp = () => {
@@ -9,7 +9,7 @@ const FooterApp = () => {
         <div className="displayFlex between displayBlockResponsive">
             
             <div>
-                <img style={{filter: 'saturate(2)'}} width="310px" height="80px" alt="logo" src={logo}/>
+                <img style={{filter: 'saturate(2)'}} width="350px" height="190px" alt="logo" src={logo}/>
                 
             </div>
             <div className="footer-items">

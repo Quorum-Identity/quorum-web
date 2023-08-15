@@ -4,6 +4,7 @@ import * as Icon from 'react-feather';
 import CardVotation from "../../components/card_votation";
 import IonIcon from "@reacticons/ionicons";
 import FooterApp from "../../components/footer/footer";
+import { Link } from "react-router-dom";
 
 
 
@@ -15,7 +16,7 @@ const Dashboard = () => {
     return (
       <div className="">
         <Navbar/>
-          <div style={{position: 'relative'}} className="mt1 presentation displayFlex center displayBlockResponsive">
+          <div style={{position: 'relative'}} className="presentation displayFlex center displayBlockResponsive">
             <div className="w50 w100Responsive displayNoneResponsive">
               <img className="modified"  style={{
                 transform: 'translate(-50%)',
@@ -43,7 +44,7 @@ const Dashboard = () => {
           </div>
           <div className="container ">
               <h1 className="m1 mt2" style={{color: 'black'}}>There are more than 36 million voters only in Argentina</h1>
-              <p className="m1" style={{color: 'black'}}>Worldwide, billions of people exercise their right to vote in various electoral processes. From presidential elections to local elections, voting is a powerful tool to express the will of the citizens and determine the political direction of nations. Active voter participation is essential to uphold democracy and ensure that everyone's voices are heard in the decision-making process.</p>
+              <p className="m1" style={{color: 'black'}}>Billions of people exercise their right to vote in various electoral processes. From presidential elections to local elections, voting is a powerful tool to express the will of the citizens and determine the political direction of nations. Active voter participation is essential to uphold democracy and ensure that everyone's voices are heard in the decision-making process.</p>
           </div> 
           <div style={{paddingTop: '3rem', paddingBottom: '3rem'}} className="presentation mt2 displayFlex displayBlockResponsive">
             <div className="container w50 w100Responsive ">
@@ -106,42 +107,18 @@ const Dashboard = () => {
             </div>
           </div>
           <div style={{margin: '0px', backgroundColor: '#eeeeee', paddingTop: '3rem', paddingBottom: '5rem'}}>
-          <div style={{margin: '0px'}}  className="w100  flexEquals between displayBlockResponsive">
-            <div className="displayFlexResponsive center" style={{display: "inline-block"}}>
-              <div className="social-icon lk">
-                <IonIcon name="logo-linkedin"></IonIcon>
-              </div>
-              <div className="social-icon fb">
-                <IonIcon name="logo-facebook"></IonIcon>
-              </div>
-              <div className="social-icon ig">
-                <IonIcon name="logo-instagram"></IonIcon>
-              </div>
-              <div className="social-icon ds">
-                <IonIcon name="logo-discord"></IonIcon>
-              </div>
-                    
-                    
-            </div>
-            <div className="w100" style={{borderRadius: '.5rem', backgroundColor: 'white'}}>
+          <div style={{margin: '0px'}}  className="w100 center">
+            
+            <div className="w50 " style={{margin: 'auto' ,borderRadius: '.5rem', backgroundColor: 'white'}}>
                 
                 <h1 className="m1" style={{color: 'black', fontSize: '2rem'}}>Can I buy you a coffee with us?</h1>
-                <div className="displayFlex w100">
+                 
+
                   <div className="m1 w100">
-                    <p>Full name</p>
-                    <input className="input" placeholder=""/>
-                  </div>
-                  <div>
-
-                  </div>
-                  <div className="m1 w50">
                     <p>Email</p>
-                    <input style={{paddingRight: '0rem'}} className="input" placeholder=""/>
+                    <input style={{paddingRight: '0rem'}} className="input w100" placeholder=""/>
                   </div>
-                  <div>
 
-                  </div>
-                </div>
                 
                 <div className="w100 right">
                   <button className="btn btn-primary">Send<IonIcon style={{marginLeft: '1rem'}} name="chevron-forward-outline"/> </button>
