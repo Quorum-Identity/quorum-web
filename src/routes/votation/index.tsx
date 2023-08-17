@@ -6,6 +6,7 @@ import SelectTypeVotation from './select.type';
 import './create.votation.css';
 import AddVotationOptions from './add.options';
 import Footer from '../../components/footer/footer';
+import NavbarHub from '../hub/components/navbar';
 
 type OptionVotation  = { 
   title: string,
@@ -33,8 +34,8 @@ const CreateVotation = () => {
   const [oldComponent, setOldComponent] = useState<number>(-1)
   const [activeComponent, setActiveComponent] = useState<number>(0)
   return (
-      <div>
-        <Navbar />
+      <div className="displayFlex">
+        <NavbarHub />
        
         <div className='container votation'>
           <h1>{listelements[activeComponent].title}</h1>
@@ -63,9 +64,7 @@ const CreateVotation = () => {
               }}>Next</button>
             </div>
         </div>
-        
-        <Footer/>
-      </div>
+        </div>
   );
 }
   

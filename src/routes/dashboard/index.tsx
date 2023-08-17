@@ -107,26 +107,30 @@ const Dashboard = () => {
             </div>
           </div>
           <div style={{margin: '0px', backgroundColor: '#eeeeee', paddingTop: '3rem', paddingBottom: '5rem'}}>
-          <div style={{margin: '0px'}}  className="w100 center">
-            
-            <div className="w50 " style={{margin: 'auto' ,borderRadius: '.5rem', backgroundColor: 'white'}}>
-                
-                <h1 className="m1" style={{color: 'black', fontSize: '2rem'}}>Can I buy you a coffee with us?</h1>
-                 
+            <div style={{margin: '1rem'}}>
+              <div className="login w100 displayFlex displayBlockResponsive" style={{flexDirection: "row"}}>
+                <div style={{height: "auto"}} className="gradientBox w50 center w100Responsive">
+                      
+                      
+                      <div style={{padding: '1rem'}} className="w100 mt2">
+                        <h1 style={{color: '#47a347', fontSize: '2rem'}}>Try our product for free</h1>
+                        
 
-                  <div className="m1 w100">
-                    <p>Email</p>
-                    <input style={{paddingRight: '0rem'}} className="input w100" placeholder=""/>
+                        <button className="btn btn-white">Get a Demo!</button>
+                      </div>
+
                   </div>
+                  <div  className="w50 " style={{marginRight: '2rem' ,overflow: "hideen", padding: '2rem'}}>
 
-                
-                <div className="w100 right">
-                  <button className="btn btn-primary">Send<IonIcon style={{marginLeft: '1rem'}} name="chevron-forward-outline"/> </button>
-
-                </div>
+                      <h3 className="m1" style={{fontWeight: '300' ,fontSize: '3rem'}}> Contact</h3>
+                      <input placeholder='email' type="email" className="input m1" />
+                      <div className="right">
+                          <button style={{marginRight: '0rem'}} className="btn btn-primary">Send Mail</button>
+                      </div>
+                  </div>
+                  
+              </div>
             </div>
-            <div/>
-          </div>
           </div> 
 
           
