@@ -29,15 +29,14 @@ export const createUser = async (
 export const loginUser = async (email: string, password: string, dispach: any) => {
     
   try{
-      const cookies = new Cookie();
-      const response: any = await apiCall("/user/login", "post", {email, password});
-      console.log(response);
-      if(response.user !== undefined){
-          cookies.set('access_token', response.token, { path: '/' })
-          response.user.login = true;
-          await dispach(setUserStore(response?.user));
-          return true;
-      } else return false;
+    const cookies = new Cookie();
+    const response: any = await apiCall("/user/login", "post", {email, password});
+    if(response.user !== undefined){
+        cookies.set('access_token', response.token, { path: '/' })
+        response.user.login = true;
+        dispach(setUserStore(response?.user));
+        return true;
+    } else return false;
   }
   catch(error){
       return false;

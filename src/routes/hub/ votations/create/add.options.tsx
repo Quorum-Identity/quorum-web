@@ -1,7 +1,7 @@
 import IonIcon from "@reacticons/ionicons";
 import { FunctionComponent, useState } from "react";
 import { useForm } from "react-hook-form";
-import { SwitchComponentChildrenType } from "../../utils/general";
+import { SwitchComponentChildrenType } from "../../../../utils/general";
 
 
 const AddVotationOptions: FunctionComponent<SwitchComponentChildrenType> = () => {

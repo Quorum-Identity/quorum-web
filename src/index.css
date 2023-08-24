@@ -8,6 +8,12 @@ body{
 .container{
   margin: 4rem;
 }
+.hub-container{
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
 :root{
   --background-color : #111111;
   --black-color: #0c0c0c;
@@ -36,8 +42,11 @@ p{
   word-wrap: keep-all;
   font-size: 1.2rem;
   line-height: 2rem;
-  font-family: 'Oswald', sans-serif;
-  
+  font-family: 'Oswald', sans-serif; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.p-hub{
+  font-family: 'Roboto', sans-serif;
 }
 span{
   letter-spacing: .15rem;
@@ -56,14 +65,17 @@ span{
   font-size: 1rem;
   color: #5d34a5;
 }
-input{
+input, select{
   letter-spacing: .2rem;
   padding: 1rem 1rem 1rem 1rem ;
   border: 1px solid var(--black-color) ;
-  background-color: transparent ;
+  background-color: transparent !important;
   color: var(--black-color) ;
   border-radius: 1rem ;
-  width: 100% ;
+  width: 100%;
+}
+select{
+  padding-right: 2rem;
 }
 
 input:focus{
@@ -190,6 +202,15 @@ input:focus{
 }
 .btn-primary:hover, .btn-primary-full:hover{
   transform: scale(1.1);
+}
+
+.table-white-background{
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  box-shadow: .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.125);
+  background-color: white;
+  padding: 2rem;
 }
 @media  (max-width: 650px) {
 	.container{

@@ -14,9 +14,12 @@ const HomeHub = () => {
         }
     }, []);
     return (
-    <>
+    <div className="displayFlex">
         <NavbarHub/>
-    </>
+        <div className="hub-container">
+            
+        </div>
+    </div>
     )
 }
 

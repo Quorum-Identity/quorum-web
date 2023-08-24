@@ -1,12 +1,12 @@
 import { FunctionComponent, useState } from 'react';
-import Navbar from '../../components/navbar';
-import  { SwitchComponents } from '../../utils/general';
+import Navbar from '../../../../components/navbar';
+import  { SwitchComponents } from '../../../../utils/general';
 import ConfigureVotationDates from './configure.dates';
 import SelectTypeVotation from './select.type';
 import './create.votation.css';
 import AddVotationOptions from './add.options';
-import Footer from '../../components/footer/footer';
-import NavbarHub from '../hub/components/navbar';
+import Footer from '../../../../components/footer/footer';
+import NavbarHub from '../../components/navbar';
 
 type OptionVotation  = { 
   title: string,
@@ -15,7 +15,7 @@ type OptionVotation  = {
 }
 const listelements: Array<OptionVotation> = [
   {
-    title: "1. Select the type of users you want to vote.",
+    title: "1. Identify your unique users with a document scan, proof of life and facial recognition created in artificial intelligence, we recommend you read the pricing section.",
     element: <SelectTypeVotation name="select-votation" />,
     name: "select-votation"
   },
@@ -37,7 +37,7 @@ const CreateVotation = () => {
       <div className="displayFlex">
         <NavbarHub />
        
-        <div className='container votation'>
+        <div className='hub-container votation'>
           <h1>{listelements[activeComponent].title}</h1>
             <div className="create-votation">
                 

@@ -18,14 +18,14 @@ const LoginView = () => {
     const constructForm = async () =>{
         if(email !== '' && password !== ''){
             if(await loginUser(email, password, useDispatch)){
-                navigate('/hub', {replace: true})
+                navigate('/votations')
             } else setFormMessage('Enter a valid email and password');
         } else setFormMessage('Complete all fields');
     }
 
     useEffect(() => {
         if(user._id !== ''){
-            navigate('/hub', {replace: true});
+            navigate('/votations', {replace: true});
         }
     }, []);
     return (
