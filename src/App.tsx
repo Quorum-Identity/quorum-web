@@ -18,6 +18,7 @@ import { useAppDispatch } from "./hooks/store/store";
 import { GetUserData } from "./hooks/api/api.user";
 import HomeHub from "./routes/hub/home";
 import VotationsHub from "./routes/hub/ votations";
+import PricingHub from "./routes/hub/pricing";
 const App = () =>  {
   const dispatch = useAppDispatch();
   const [isLoading, setLoading] = useState<boolean>(false);
@@ -44,6 +45,10 @@ const App = () =>  {
               //HUB
               <Route path="/hub" element={<HomeHub/>}/>
               <Route path="/votations" element={<VotationsHub/>}/>
+
+              //Cards
+
+              <Route path="/pricing" element={<PricingHub/>}/>
 
             </Routes>
         </Router>
