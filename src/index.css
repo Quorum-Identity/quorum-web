@@ -10,9 +10,6 @@ body{
 }
 .hub-container{
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
 }
 :root{
   --background-color : #111111;
