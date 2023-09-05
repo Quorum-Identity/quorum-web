@@ -12,7 +12,7 @@ const VotationsHub = () => {
     useEffect(() => {
 
         if(user._id === ""){
-            navigate('/login', {replace: true});
+            //navigate('/login', {replace: true});
         }
     }, []);
     return (

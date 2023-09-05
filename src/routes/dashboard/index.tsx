@@ -19,9 +19,9 @@ const Dashboard = () => {
           <div style={{position: 'relative'}} className="presentation displayFlex center displayBlockResponsive">
             <div className="w50 w100Responsive displayNoneResponsive">
               <img className="modified"  style={{
-                transform: 'translate(-50%)',
-                maxWidth: '90vw'
-              }}  src="https://static-content.regulaforensics.com/Software-products/Face%20SDK/FACE.jpg"/>
+                transform: 'translate(-25%)',
+                maxWidth: '100vw'
+              }}  src="https://storage.googleapis.com/dialpad-cms.appspot.com/cms/_800x418_crop_center-center_82_none/Phone-call-from-a-web-browser_Meta.png?mtime=1650288426"/>
             
             </div>
             <div className="containerpurple left" style={{

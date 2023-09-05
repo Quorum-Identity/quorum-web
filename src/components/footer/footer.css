@@ -37,4 +37,8 @@
     .footer-items .section{
         display: block;
     }
+    .footer-logo{
+        width: 150px;
+        height: 75px;
+    }
 }

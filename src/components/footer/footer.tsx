@@ -9,7 +9,7 @@ const FooterApp = () => {
         <div className="displayFlex between displayBlockResponsive">
             
             <div>
-                <img style={{filter: 'saturate(2)'}} width="350px" height="190px" alt="logo" src={logo}/>
+                <img className="footer-logo" style={{filter: 'saturate(2)'}} width="350px" height="175px" alt="logo" src={logo}/>
                 
             </div>
             <div className="footer-items">

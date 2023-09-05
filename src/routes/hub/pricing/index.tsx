@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import NavbarHub from "../components/navbar"
 import { getStore } from "../../../hooks/store/user.slice";
 import { useAppSelector } from "../../../hooks/store/store";
 import { useEffect } from "react";
 import Icons from '@reacticons/ionicons'
+import Navbar from "../../../components/navbar";
+import FooterApp from "../../../components/footer/footer";
 
 
 const PricingHub = () => {
@@ -16,11 +17,15 @@ const PricingHub = () => {
         }
     }, []);
     return (
-    <div className="displayFlex">
-        <NavbarHub/>
-        <div className="hub-container">
-        <h1>Plan & Pricing</h1>
-        <div className='linea-container'>
+    <div className="">
+        <Navbar/>
+        <div >
+
+            <img width='100%' src="https://cdn.discordapp.com/attachments/1128670410058252369/1128822422674624633/Politicos.png"/>
+          </div>
+        <div className="container">
+        <h1 className="m1" style={{color: 'black'}}>Get your a custom plan</h1>
+        <div className='linea-container displayBlockResponsive'>
             <article className='card'>
                 <div className='card-body'>
                     <div id='logotipo'>
@@ -190,6 +195,7 @@ const PricingHub = () => {
             </article>
         </div>
         </div>
+        <FooterApp/>
     </div>
     )
 }
