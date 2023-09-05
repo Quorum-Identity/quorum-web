@@ -29,7 +29,7 @@ const NavbarHub = () => {
          <MenuItem style={{zIndex: 1}} component={<Link to="/votations" />}>  <IonIcon name="ellipsis-vertical-outline" style={{marginRight: '.5rem' ,color: 'black'}}/><span style={{color: 'black'}}>Votations</span></MenuItem>
          <MenuItem component={<Link to="/e-commerce" />}> <IonIcon name="person-outline" style={{marginRight: '.5rem' ,color: 'black'}}/><span style={{color: 'black'}}>Configuration</span></MenuItem>
          <MenuItem component={<Link to="/e-commerce" />}><IonIcon name="log-out-outline" style={{marginRight: '.5rem' ,color: 'brown'}}/><span style={{color: 'brown'}}>Log Out</span></MenuItem>
-
+         
       </Menu>
       </Sidebar>
    </div>);

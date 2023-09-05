@@ -8,6 +8,8 @@ import AddVotationOptions from './add.options';
 import Footer from '../../../../components/footer/footer';
 import NavbarHub from '../../components/navbar';
 
+
+
 type OptionVotation  = { 
   title: string,
   element: JSX.Element,

@@ -3,6 +3,7 @@ import NavbarHub from "../components/navbar"
 import { getStore } from "../../../hooks/store/user.slice";
 import { useAppSelector } from "../../../hooks/store/store";
 import { useEffect } from "react";
+import UserNavbar from "../components/panelnombreuser";
 
 const HomeHub = () => {
     const {user} = useAppSelector(getStore);
@@ -17,7 +18,7 @@ const HomeHub = () => {
     <div className="displayFlex">
         <NavbarHub/>
         <div className="hub-container">
-            
+            <UserNavbar/>
         </div>
     </div>
     )
