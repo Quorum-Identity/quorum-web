@@ -3,7 +3,7 @@ import NavbarHub from "../components/navbar"
 import { getStore } from "../../../hooks/store/user.slice";
 import { useAppSelector } from "../../../hooks/store/store";
 import { useEffect } from "react";
-import UserNavbar from "../components/panelnombreuser";
+import UserNavbar from "../components/UserNavbar/panelnombreuser";
 
 const HomeHub = () => {
     const {user} = useAppSelector(getStore);

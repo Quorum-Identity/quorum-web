@@ -5,7 +5,9 @@ import { useAppSelector } from "../../../hooks/store/store";
 import { useEffect } from "react";
 import IonIcon from "@reacticons/ionicons";
 import GetDemo from "../../resources/getdemo";
-import UserNavbar from "../components/panelnombreuser";
+import UserNavbar from "../components/UserNavbar/panelnombreuser";
+
+
 
 const VotationsHub = () => {
     const {user} = useAppSelector(getStore);
@@ -19,9 +21,10 @@ const VotationsHub = () => {
     return (
     <div className="displayFlex">
         <NavbarHub/>
-        
+       
         <div className="hub-container w100" >
             <UserNavbar/>
+           
             <div style={{flexBasis: '100%', padding: '2rem'}}>
                 <div className="displayFlex between w100">
                     <h1 style={{fontSize: '3rem', marginTop: 'auto'}}>Your votations</h1>

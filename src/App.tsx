@@ -19,6 +19,7 @@ import { GetUserData } from "./hooks/api/api.user";
 import HomeHub from "./routes/hub/home";
 import VotationsHub from "./routes/hub/ votations";
 import PricingHub from "./routes/hub/pricing";
+import ConfigurationsUser from "./routes/hub/Configuration/userconfig";
 const App = () =>  {
   const dispatch = useAppDispatch();
   const [isLoading, setLoading] = useState<boolean>(false);
@@ -49,6 +50,11 @@ const App = () =>  {
               //Cards
 
               <Route path="/pricing" element={<PricingHub/>}/>
+
+              //Configuration
+
+              <Route  path="/configuration" element= {<ConfigurationsUser/>}/>
+              
 
             </Routes>
         </Router>

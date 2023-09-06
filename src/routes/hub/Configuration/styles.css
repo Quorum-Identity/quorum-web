@@ -1,0 +1,108 @@
+.layout-container{
+    width: 100%;
+    /* height: 100vh; */
+    font-family: 'Oswald', sans-serif;
+}
+
+/*FORMULARIO*/
+
+.formulario{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin-top: 30px;
+    border-top: none;
+}
+
+.formulario-date { 
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 2); 
+    
+}
+
+.formulario-date label { 
+    padding-bottom: 14px;
+    padding-top: 12px;
+    font-size: 1.2rem
+    
+}
+
+.formulario-date input { 
+    width: 40%;
+    background-color: transparent !important;
+    
+}
+
+/*Formulario perfil */
+
+
+.formulario-perfil{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid black;
+    flex-basis: calc(70% / 2);
+    margin-bottom: 100px;
+}
+
+.formulario-perfil input {
+    width: 30%;
+}
+
+.formulario-perfil label { 
+    padding-bottom: 14px;
+    padding-top: 12px;
+    font-size: 1.2rem
+}
+
+.giro-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 20px 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.giro-image img { 
+    width: 100%;
+}
+
+.formulario-perfil div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 18px;
+}
+
+.formulario-location{
+    display: flex;
+    justify-content: space-between;
+    height: 240px;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.formulario-location section { 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario-location p { 
+  align-self: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.formulario-location select { 
+    width: 100%;
+
+}
