@@ -5,9 +5,10 @@ import './styles.css'
 
 const ConfigurationsUser = () => {
   return (
-    <>
+    <div className="displayFlex">
+        <NavbarHub/>
       
-               <div className="displayFlex">
+               <div className="displayFlex" style={{width: '100%'}}>
 
                <div className="layout-container">
                     
@@ -95,7 +96,7 @@ const ConfigurationsUser = () => {
                </div>
                 
               
-    </>
+    </div>
   )
 }
 

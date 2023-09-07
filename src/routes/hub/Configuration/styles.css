@@ -10,7 +10,6 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     margin-top: 30px;
     border-top: none;
 }
@@ -48,11 +47,11 @@
     justify-content: space-between;
     border-left: 1px solid black;
     flex-basis: calc(70% / 2);
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .formulario-perfil input {
-    width: 30%;
+    width: 60%;
 }
 
 .formulario-perfil label { 
@@ -85,10 +84,9 @@
 .formulario-location{
     display: flex;
     justify-content: space-between;
-    height: 240px;
     width: 100%;
     align-items: center;
-    
+    margin-bottom: 2rem;
 }
 
 .formulario-location section { 
