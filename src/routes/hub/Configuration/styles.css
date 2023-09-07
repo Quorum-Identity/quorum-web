@@ -1,57 +1,54 @@
 .layout-container{
     width: 100%;
-    /* height: 100vh; */
     font-family: 'Oswald', sans-serif;
 }
 
 /*FORMULARIO*/
 
-.formulario{ 
+.formulario-content{ 
+    max-height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-    border-top: none;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+ 
+    margin: 20px auto;
+
 }
 
-.formulario-date { 
-    margin-left: 100px;
-    margin-top: 100px;
-    padding: 10px;
-    width: 100%;
+ /* FORMULARIO-DATE  */
+.formulario-date form { 
     display: flex;
     flex-direction: column;
-    flex-basis: calc(100% / 2); 
+    justify-content: center;
+    margin-left: 100px;
+    height: 400px;
+    align-items: flex-start;
     
 }
 
 .formulario-date label { 
     padding-bottom: 14px;
     padding-top: 12px;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    
     
 }
 
 .formulario-date input { 
-    width: 40%;
+    width: 50%;
     background-color: transparent !important;
-    
 }
 
 /*Formulario perfil */
 
-
 .formulario-perfil{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     border-left: 1px solid black;
-    flex-basis: calc(70% / 2);
-    margin-bottom: 20px;
+     
 }
 
 .formulario-perfil input {
-    width: 60%;
+    width: 50%;
 }
 
 .formulario-perfil label { 
@@ -60,47 +57,55 @@
     font-size: 1.2rem
 }
 
+/*ESTILO IMAGE*/
+
 .giro-image{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 10px;
     border-radius: 100%;
-    margin: 20px 60px;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
 }
 
 .giro-image img { 
     width: 100%;
+    object-fit:cover;
 }
 
-.formulario-perfil div:nth-child(2){
+
+/*FORMULARIO PERFIL*/
+
+.formulario-perfil form { 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-self: center;
     margin-left: 18px;
+    padding: 10px;
+    margin-top: 6px;
 }
+
+
+/*FORMULARIO LOCALIZACION*/
 
 .formulario-location{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: space-around;
+    align-self: center;
+    height: 300px;
+    
+    border-bottom: 1px solid;
 }
 
-.formulario-location section { 
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.formulario-location p { 
-  align-self: center;
+
+.formulario-location section p { 
   font-size: 1.2rem;
   line-height: 2rem;
-}
-
-.formulario-location select { 
-    width: 100%;
-
 }
