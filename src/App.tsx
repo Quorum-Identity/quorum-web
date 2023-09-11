@@ -20,6 +20,7 @@ import HomeHub from "./routes/hub/home";
 import VotationsHub from "./routes/hub/ votations";
 import PricingHub from "./routes/hub/pricing";
 import ConfigurationsUser from "./routes/hub/Configuration/userconfig";
+import StaffCard from "./components/card-staff/StaticCard";
 const App = () =>  {
   const dispatch = useAppDispatch();
   const [isLoading, setLoading] = useState<boolean>(false);
@@ -55,7 +56,7 @@ const App = () =>  {
 
               <Route  path="/configuration" element= {<ConfigurationsUser/>}/>
               
-
+                <Route path="/staff" element={<StaffCard/>}/>
             </Routes>
         </Router>
         : <></>}

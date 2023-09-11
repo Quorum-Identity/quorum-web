@@ -1,0 +1,30 @@
+ [  {
+        "name" : "Ben Ashley",
+        "ability" : "Digital Strategist",
+        "imagen" : "https://images.unsplash.com/photo-1692789183372-1b4b9f73a5ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+      },
+       
+      {
+        "name" : "Amanda Nguyen",
+        "ability" : "Managing Director",
+        "imagen" : "https://images.unsplash.com/photo-1650389176833-8dbb23d0d8f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "id" : "2"
+      },
+      {
+        "name" : "Amanda Nguyen",
+        "ability" : "Director of Operations",
+        "imagen" : "https://images.unsplash.com/photo-1692035053253-c40149437b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDk1fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        "id" : "3"
+      }, 
+    
+      {
+        "name" : "Luther Makina",
+        "ability" : "Digital Strategist",
+        "imagen" : "https://images.unsplash.com/photo-1690495575921-370d1cd566c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE1Nnx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+        "id" : "4"
+      }
+
+
+      
+]
+
