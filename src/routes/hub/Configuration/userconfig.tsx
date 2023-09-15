@@ -1,11 +1,51 @@
-import UserNavbar from "../components/UserNavbar/panelnombreuser"
+import {  useEffect, useState } from "react"
+
 import NavbarHub from "../components/navbar"
 import './styles.css'
 
 
+
+
+
 const ConfigurationsUser = () => {
+    
+  
+    const [data,setData] = useState([""])
+  
+    useEffect (() => { 
+      
+      fechtData()
+      
+    },[])
+    
+    
+    const fechtData =  async() => { 
+      const resp = await fetch(`https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre`)
+      const dat = await resp.json()
+
+       setData(dat.provincias)
+
+      //  console.log(dat.parametros);
+       
+    
+      }   
+    // console.log(data);
+
+   const handleChance = (e:any) => { 
+    // console.log(e.target.value);
+    
+   }
+ 
+
+   const handleClick = (e:any) => { 
+    
+      console.log(e.target.value);
+      
+
+   }
+
   return (
-    <>
+      <>
           <div className= "displayFlex">
               <NavbarHub/>
 
@@ -54,40 +94,43 @@ const ConfigurationsUser = () => {
                      </div>
 
                      <div className="formulario-location">                                                   
-                        <section>
+                                <form   >
+                                <section>
                                                         
-                          <p>Department</p>
-                             <select name="" id="">
-                                                    <option value="">Mendoza</option>
-                                                    <option value="">San Luis</option>
-                                                    <option value="">San Juan</option>
-                                                </select>
-                                                        
-                                                </section>
+                                      <p>Provincias</p>
+                                             <select  onClick={handleClick} name="provincias">
+            
+                                             {
+                                                  data.map ((el:any,id) => {
+                                                    return <option  onChange={(e:any)=> setData(e.target.value) } value={el.nombre} key={id} >{`${el.nombre}`}</option>
+                                                  } )
+                                              }
+                    
+                                             </select>
+                                                                                      
+                                 </section>
+                              
+                                 <section>
+                                                                                      
+                                <p >Municipios</p>
 
-                                                    <section>
-                                                        
-                                                    <p >City</p>
-                                                    <select name="" id="">
-                                                        <option value="">San Rafael</option>
-                                                        <option value="">Mendoza</option>
-                                                    </select> 
-
-                                                    </section>
-
-
-                                                    <section>
-
-                                                    <p>Country</p>
-                                                    <select name="" id="">
-                                                        <option value="">Argentina</option>
-                                                        <option value="">Brazil</option>
-                                                        <option value="">Colombia</option>
+                                <select name="Municipios" id="">
+                                      {
+                                          data.map ((el:any,id) => {
+                                            return <option disabled value={data} onChange={()=>handleChance} key={id}>{`${el.nombre}`}</option>
+                                          } )
+                                      }
+                    
                              </select>
-
-                         </section>
-                                            
-                               
+                              
+                                 </section>
+                              
+                              
+                                 
+                                                                          
+                                                             
+                                </form>
+                        
                      </div> 
         
                     
@@ -95,7 +138,6 @@ const ConfigurationsUser = () => {
                         </section>
 
 
-                    
 
                          
                     </div>

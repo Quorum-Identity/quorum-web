@@ -17,13 +17,13 @@ return (
         
                 {
                   JsonStaticForCards.map(({name,ability,imagen,id}) => (
-                    <section className="cards" key={id}>
+                    <section className="cards" key={`${id}`}>
                      
                     <img src={`${imagen}`} alt=""/>
       
                     <div className="info-card">
-                        <h2 >{name}</h2>
-                        <p >{ability}</p>
+                        <h2>{name}</h2>
+                        <p>{ability}</p>
                     </div>
       
                     </section>
