@@ -9,9 +9,7 @@ const StaffCard = () => {
   
 return (
     <>
-    
-           <Navbar/>
-         <div className="displayFlex">
+             <div className="displayFlex">
                   
             <div className="container-cards">
         

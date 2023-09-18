@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './hooks/store';
+<<<<<<< HEAD
 import './routes/hub/pricing/styles.css'
 import {I18nextProvider} from 'react-i18next'
 import i18next  from 'i18next';
@@ -26,6 +27,9 @@ i18next.init( {
   }
 })
 
+=======
+import './routes/pricing/styles.css'
+>>>>>>> 322d0780acc4809cdedef9cbcb649cc93a5c22dc
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
   );

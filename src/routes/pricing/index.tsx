@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { getStore } from "../../../hooks/store/user.slice";
-import { useAppSelector } from "../../../hooks/store/store";
+import { getStore } from "../../hooks/store/user.slice";
+import { useAppSelector } from "../../hooks/store/store";
 import { useEffect } from "react";
 import Icons from '@reacticons/ionicons'
-import Navbar from "../../../components/navbar";
-import FooterApp from "../../../components/footer/footer";
+import Navbar from "../../components/navbar";
+import FooterApp from "../../components/footer/footer";
 
 
 

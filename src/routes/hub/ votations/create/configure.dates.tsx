@@ -10,7 +10,11 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
         handleSubmit,
         formState: { errors },
     } = useForm();
-    const [type, setType] = useState<number>(0);
+    const [type, setType] = useState<number>(0);{}
+
+  
+    
+
     return (
             <form className="w100" onSubmit={handleSubmit((data) => console.log(data))}>
 
