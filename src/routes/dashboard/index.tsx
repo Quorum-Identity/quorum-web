@@ -6,6 +6,7 @@ import IonIcon from "@reacticons/ionicons";
 import FooterApp from "../../components/footer/footer";
 import { Link } from "react-router-dom";
 
+import { Fade, JackInTheBox, Bounce} from "react-awesome-reveal";
 
 
 
@@ -29,7 +30,9 @@ const Dashboard = () => {
               zIndex: '1'
             }}>
               <h1 style={{color: '#47a347', fontSize: '2rem'}}>Blockchain</h1>
-              <h1 style={{color: 'white', fontSize: '4rem'}}>Vote with your phone from anywhere in the world</h1>
+              <Fade>
+                <h1 style={{color: 'white', fontSize: '4rem'}}>Vote with your phone from anywhere in the world</h1>
+              </Fade>
               <button className="btn btn-primary">Frequent Questions</button>
               <button className="btn btn-primary-full">Start now</button>
 
@@ -53,7 +56,9 @@ const Dashboard = () => {
               <button className="btn btn-primary-full"><IonIcon name="logo-google-playstore"/> Get It on Google Play</button>
               <button className="btn btn-primary"><IonIcon name="logo-apple"/> Available on the App Store</button>
             </div>
+            <JackInTheBox className="animate__backInRight">
               <video  playsInline autoPlay muted loop><source src="https://static-content.regulaforensics.com/FACE%20SDK%2013%20Feb.mp4"/> Your browser does not support the video tag. </video>
+            </JackInTheBox>
           </div>
           
           <div className="container mt2">
@@ -70,39 +75,50 @@ const Dashboard = () => {
             <div className="container">
               <h1 className="fzResponsive" style={{color: 'white'}}> Technologies we use</h1>
               <div className="displayFlex between displayBlockResponsive">
+                <Bounce >
                 <div className="technologie">
                   <IonIcon name="document-outline"/>
                   <h2 >Document type identification</h2>
                   <p>Verify data from 12,000+ international documents using AI and ML.</p>
                 </div>
+                </Bounce>
+                <Bounce>
                 <div className="technologie">
                   <IonIcon name="person-circle-outline"/>
                   <h2 >Livennes Detection</h2>
                   <p>Examine the liveness of a person with AI and machine learning algorithms.</p>
                 </div>
+                </Bounce>
+                <Bounce>
                 <div className="technologie">
                   <IonIcon name="search-outline"/>
                   <h2 >Optical Character Recognition (OCR)</h2>
                   <p>Convert typed or printed text into digital data.</p>
                 </div>
+                </Bounce>
               </div>
               <div className="displayFlex between displayBlockResponsive">
+                <Bounce>
                 <div className="technologie">
                   <IonIcon name="construct-outline"/>
                   <h2 >Hardware-Assisted Authentication</h2>
                   <p>Scan documents anywhere with pocket-sized verification tools</p>
                 </div>
+                </Bounce>
+                <Bounce>
                 <div className="technologie">
                   <IonIcon name="hardware-chip-outline"/>
                   <h2 >RFID reading</h2>
                   <p>Verify documents equipped with Radio Frequency Identification (RFID) chips.</p>
                 </div>
+                </Bounce>
+                <Bounce>
                 <div className="technologie">
                   <IonIcon name="id-card"/>
                   <h2 >Face matching</h2>
                   <p>Make sure that a document’s presenter and its owner are the same person.</p>
                 </div>
-                
+                </Bounce>
               </div>
             </div>
           </div>

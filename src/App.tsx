@@ -22,6 +22,7 @@ import PricingHub from "./routes/pricing";
 import ConfigurationsUser from "./routes/hub/Configuration/userconfig";
 import StaffCard from "./components/card-staff/StaticCard";
 import Staff from "./routes/staff";
+
 const App = () =>  {
   const dispatch = useAppDispatch();
   const [isLoading, setLoading] = useState<boolean>(false);
