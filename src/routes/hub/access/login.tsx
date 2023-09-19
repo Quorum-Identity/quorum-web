@@ -47,7 +47,7 @@ const LoginView = () => {
                 <div style={{height: "auto"}} className="gradientBox w50 center w100Responsive">
                     
                     
-                    <img style={{filter: 'saturate(2)',marginTop: '5rem' }} width="350px" height="190px" alt="logo" src={logo}/>
+                    <img style={{filter: 'saturate(2)',marginTop: '5rem' }} width="350px" height="175px" alt="logo" src={logo}/>
                     <div className="w100">
                     <button className="btn btn-white">Get an account</button>
                     </div>
