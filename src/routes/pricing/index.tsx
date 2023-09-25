@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Icons from '@reacticons/ionicons'
 import Navbar from "../../components/navbar";
 import FooterApp from "../../components/footer/footer";
-
+import './styles.css'
 
 
 const PricingHub = () => {

@@ -21,11 +21,11 @@ import VotationsHub from "./routes/hub/ votations";
 import PricingHub from "./routes/pricing";
 import ConfigurationsUser from "./routes/hub/Configuration/userconfig";
 import StaffCard from "./components/card-staff/StaticCard";
-<<<<<<< HEAD
 
-=======
+
+
 import Staff from "./routes/staff";
->>>>>>> 322d0780acc4809cdedef9cbcb649cc93a5c22dc
+
 const App = () =>  {
   const dispatch = useAppDispatch();
   const [isLoading, setLoading] = useState<boolean>(false);
