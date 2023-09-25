@@ -2,17 +2,37 @@ import IonIcon from '@reacticons/ionicons';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/logomodern3.png';
 import './index.css';
-import LogoEspana from '../../assets/spain_flag_icon_228692.png'
-import LogoReinoUnido from '../../assets/reino-unido.png'
 import {useTranslation} from 'react-i18next'
+import { useRef } from 'react';
+import logoEspaña from '../../assets/espanaCopia.png'
+import LogoEstadosUnidos from '../../assets/estados-unidos.png'
+import LogoItalia from '../../assets/italia.png'
 
 
 const Navbar = () => {
   const navigate = useNavigate();
   
   const [t,i18n] = useTranslation("global")
+
+
+
+  // const button = useRef(null)
+  // const handleChange = (e) => {
+  //     console.log(e);
+  //   if ( button.current.style.display === 'none') {
+  //   return button.current.style.display = 'flex'
+  // }else { 
+  //   button.current.style.display = 'none'
+  // }
+ 
+
+  // }
+
   
+ 
   
+
+
     return (
       <div className="navbar">
         <div className="navbar-brand">
@@ -23,23 +43,33 @@ const Navbar = () => {
             <button className="navbar-item" onClick={() => navigate('/login', {replace: true})} >
              Hud <IonIcon name="open-outline" />
             </button>
-            <h1></h1>
-            <div className='navbar-list'>
-              
-               
-               <button className='buton-idioma' value="" onClick={() => i18n.changeLanguage('en')} >English
-                <img src={LogoReinoUnido} alt="" />
-               </button>
-                <button className='buton-idioma' value="" onClick={() => i18n.changeLanguage('es')}>España
-                  <img src={LogoEspana} alt="" />
-                </button>
-                
-              
-                
-              
-        </div>   
-        </div>
+            
+           <div className='container-navbar'  >
+              <h3 >Language <IonIcon className='iconsss' name="chevron-up-outline"></IonIcon></h3>
+            <div className='navbar-hijo'>
+           
+            <div className='navbar-list'   >
+                  <ul>
+                      <li onClick={() => i18n.changeLanguage('es')}  >España
+                            <img src={logoEspaña} alt="españa" />
+                      </li>
+                      <li onClick={() => i18n.changeLanguage('en')} >English 
+                        
+                         <img src={LogoEstadosUnidos}  alt="english"  />
 
+                      </li>
+
+                      <li>Italia
+                            <img src={LogoItalia} alt="" />
+                      </li>
+                  </ul>
+               </div>
+            </div>
+           
+             
+            </div>
+            
+        </div>
 
       </div>
         

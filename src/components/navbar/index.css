@@ -48,24 +48,86 @@
     transform: translateX(-12%);
 }
 
-.buton-idioma { 
+/*COSAS MIAS*/
+
+
+.container-navbar { 
+    order: 1;
+    align-self: center;
+    position: relative;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 4px black;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+.container-navbar h3 { 
+    font-size: 1rem;
+    padding-right: 10px;
+    margin-top: 10px;
+  
+}
+.iconsss { 
+    position: absolute;
+    top: 12px;
+    right: 2px;
+}
+
+.container-navbar:hover .iconsss { 
+    transform: rotate(180deg);
+}
+
+.container-navbar:active{ 
+   transform: scale(0.95);
+}
+
+/*NAVBAR LIST*/
+
+.navbar-hijo { 
+    display: none;
+}
+
+.container-navbar:hover .navbar-hijo{ 
     display: block;
-    margin-left: 5px;
-    border-radius: 5px;
-    background-color: transparent;
-    box-shadow: 0px 0px 1px black;
+}
+
+
+.navbar-list { 
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    box-shadow: 0px 0px 4px black;
+    margin-top: 17px;
+    border-radius: 3px;
+    z-index: 20;
+}
+
+.navbar-list ul { 
+    list-style: none;
+    background-color: white;
+    width: 100%;
+    height: auto;
     padding: 10px;
+}
+
+.navbar-list ul li { 
+    margin-top: 15px ;
+    padding: 2px;
+    width: 80px;
     display: flex;
-    align-items: center;
-}
-
-.buton-idioma:hover { 
-    box-shadow: 0px 0px 3px inset #F76301;
+    justify-content: space-between;
+    align-items: center; 
     
 }
 
-.buton-idioma img { 
-    padding-left: 5px;
-    width: 20px;
-    
+.navbar-list ul li:hover{
+    background-color: #ccc;
+}
+
+.navbar-list ul li img {
+    margin-left: 5px;
 }
