@@ -2,34 +2,15 @@ import IonIcon from '@reacticons/ionicons';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/logomodern3.png';
 import './index.css';
-import {useTranslation} from 'react-i18next'
-import { useRef } from 'react';
 import logoEspaña from '../../assets/espanaCopia.png'
 import LogoEstadosUnidos from '../../assets/estados-unidos.png'
 import LogoItalia from '../../assets/italia.png'
 
 
-const Navbar = () => {
+
+const Navbar = ({t , i18n}:any) => {
   const navigate = useNavigate();
-  
-  const [t,i18n] = useTranslation("global")
-
-
-
-  // const button = useRef(null)
-  // const handleChange = (e) => {
-  //     console.log(e);
-  //   if ( button.current.style.display === 'none') {
-  //   return button.current.style.display = 'flex'
-  // }else { 
-  //   button.current.style.display = 'none'
-  // }
- 
-
-  // }
-
-  
- 
+  console.log({i18n});
   
 
 
@@ -41,26 +22,26 @@ const Navbar = () => {
         </div>
         <div className='navbar-items'>
             <button className="navbar-item" onClick={() => navigate('/login', {replace: true})} >
-             Hud <IonIcon name="open-outline" />
+             Hub <IonIcon name="open-outline" />
             </button>
             
            <div className='container-navbar'  >
-              <h3 >Language <IonIcon className='iconsss' name="chevron-up-outline"></IonIcon></h3>
+              <h3 >{t("12312.p1")} <IonIcon className='iconsss' name="chevron-up-outline"></IonIcon></h3>
             <div className='navbar-hijo'>
            
             <div className='navbar-list'   >
                   <ul>
-                      <li onClick={() => i18n.changeLanguage('es')}  >España
+                      <li onClick={ () => i18n?.changeLanguage('es')}> Español
                             <img src={logoEspaña} alt="españa" />
                       </li>
-                      <li onClick={() => i18n.changeLanguage('en')} >English 
+                      <li onClick={ () => i18n?.changeLanguage('en')} >English 
                         
                          <img src={LogoEstadosUnidos}  alt="english"  />
 
                       </li>
 
-                      <li>Italia
-                            <img src={LogoItalia} alt="" />
+                      <li onClick={ () => i18n?.changeLanguage('ita')}>Italian
+                            <img src={LogoItalia}  alt="" />
                       </li>
                   </ul>
                </div>

@@ -113,7 +113,43 @@
 
     "5674" : {
         "p1" : "Send Mail"
+    },
+
+    "12312" : {
+        "p1" : "Language"
+    },
+
+    "21555" : { 
+        "p1" : "UTIL LINKS"
+    },
+
+    "2456" : { 
+        "p1" : "Our team"
+    },
+
+    "12121" : { 
+        "p1" : "Work with us"
+    },
+
+    "55554" : { 
+        "p1" : "CONTACT"
+    },
+
+    "6754" : { 
+        "p1" : "RESOURCES"
+    },
+
+    "8741" : { 
+        "p1" : "Privacy Policy"
+    },
+
+    "4131" : { 
+        "p1" : "Community Rules"
     }
+
+
+
+
 
 
 

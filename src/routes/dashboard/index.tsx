@@ -11,10 +11,9 @@ const Dashboard = () => {
   
   const [t,i18n] = useTranslation('global')
 
-
     return (
       <div className="" >
-        <Navbar/>
+        <Navbar t = {t} i18n={i18n}/>
             
           <div style={{position: 'relative'}} className="presentation displayFlex center displayBlockResponsive">
             <div className="w50 w100Responsive displayNoneResponsive">
@@ -129,7 +128,7 @@ const Dashboard = () => {
           </div> 
 
           
-        <FooterApp/>
+        <FooterApp t= {t} i18n={i18n}/>
       </div>
     );
   }

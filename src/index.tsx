@@ -13,6 +13,7 @@ import './routes/pricing/styles.css'
 
 import global_en from './traslations/En/global.json'
 import global_es from './traslations/Es/global.json'
+import global_ita from './traslations/Ita/global.json'
 
 
 
@@ -25,6 +26,9 @@ i18next.init( {
     }, 
     en: { 
       global : global_en,
+    },
+    ita : {
+      global : global_ita
     }
   }
 })
