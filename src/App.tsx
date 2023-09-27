@@ -25,6 +25,7 @@ import StaffCard from "./components/card-staff/StaticCard";
 
 
 import Staff from "./routes/staff";
+import ViewVotation from "./routes/hub/ votations/view";
 
 const App = () =>  {
   const dispatch = useAppDispatch();
@@ -52,6 +53,7 @@ const App = () =>  {
               //HUB
               <Route path="/hub" element={<HomeHub/>}/>
               <Route path="/votations" element={<VotationsHub/>}/>
+              <Route path="/votations-view" element={<ViewVotation/>}/>
 
               //Cards
 

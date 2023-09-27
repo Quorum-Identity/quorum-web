@@ -84,7 +84,7 @@ function triggerTooltip(chart: ChartJS | null) {
   chart.update();
 }
 
-const GetDemo = () => {
+const ChartVotations = () => {
   const chartRef = useRef<ChartJS>(null);
 
   useEffect(() => {
@@ -96,4 +96,4 @@ const GetDemo = () => {
   return <Chart ref={chartRef} type='bar' data={data} />;
 }
 
-export default GetDemo;
+export default ChartVotations;

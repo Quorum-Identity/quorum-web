@@ -4,7 +4,7 @@ import { getStore } from "../../../hooks/store/user.slice";
 import { useAppSelector } from "../../../hooks/store/store";
 import { useEffect } from "react";
 import IonIcon from "@reacticons/ionicons";
-import GetDemo from "../../resources/getdemo";
+import ChartVotations from "../charts/initial";
 import UserNavbar from "../components/UserNavbar/panelnombreuser";
 
 
@@ -46,12 +46,12 @@ const VotationsHub = () => {
                 </div>
                 <div className="table-white-background">
                     <h1 style={{fontSize: '1.5rem'}}> Paso 2023</h1>
-                    <GetDemo/>
+                    <ChartVotations/>
                     <IonIcon name="chevron-forward-outline" style={{fontSize: '1.5rem', color: 'grey', cursor: 'pointer' ,position: 'absolute', top: '2rem', right: '1rem'}}/>
                 </div>
                 <div className="table-white-background">
                     <h1 style={{fontSize: '1.5rem'}}> Paso 2023</h1>
-                    <GetDemo/>
+                    <ChartVotations/>
                     <IonIcon name="chevron-forward-outline" style={{fontSize: '1.5rem', color: 'grey', cursor: 'pointer' ,position: 'absolute', top: '2rem', right: '1rem'}}/>
                 </div>
             </div>
