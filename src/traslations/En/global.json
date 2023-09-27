@@ -1,0 +1,158 @@
+{
+    "header" : { 
+        "hello":"Hello Word"
+    }, 
+
+    "sub_navbar" : { 
+        "parrafo" : "Vote with your phone from anywhere in the world"
+    },
+    "button_p" : {
+        "title" : "Frequent Questions"
+    },
+
+    "button_p2" : { 
+         "title" : "Start now"
+    },
+
+    "parrafo-argentina" : {
+        "h1VoteArgentina" : "There are more than 36 million voters only in Argentina"
+    },
+
+    "parrafoSobrelosvotos" : { 
+        "p1" : "Billions of people exercise their right to vote in various electoral processes. From presidential elections to local elections, voting is a powerful tool to express the will of the citizens and determine the political direction of nations. Active voter participation is essential to uphold democracy and ensure that everyone's voices are heard in the decision-making process"
+    },
+
+    "titulosection" : { 
+        "h1" : "With an easy user interface"
+    }, 
+
+    "121231" : {
+       "p1" : "With an application that is responsible for the security and transparency of electoral processes. Adding a simple and intuitive user interface"  
+    },
+
+    "213981" : {
+        "p1" : "Get It on Google Play"
+    },
+
+    "27651" : { 
+        "p1" : "Available on the App Store"
+    },
+
+    "12312312": { 
+        "p1" : "The KYC process is provided by Regula Forensics"
+    },
+
+    "213125" : { 
+        "p1" : "The KYC (Know Your Customer) process is a set of measures and verifications that companies implement to confirm the identity of their customers. It is designed to prevent money laundering, terrorist financing, and other illicit activities while ensuring transparency and security in business relationships. During the KYC process, customers are required to provide information and documents that allow the company to reliably verify their identity before initiating any form of business relationship or transaction."
+    },
+
+    "46742" : {
+        "p1" : "Technologies we use"
+    },
+
+    "2135" : { 
+        "p1" : "Document type identification"
+    },
+
+    "451234" : { 
+        "p1" : "Verify data from 12,000+ international documents using AI and ML."
+    }, 
+
+    "57421" : { 
+        "p1" : "Livennes Detection"
+    },
+
+    "576381": { 
+        "p1" : "Examine the liveness of a person with AI and machine learning algorithms."
+    },
+
+    "2451" : {
+        "p1" : "Optical Character Recognition (OCR)"
+    }, 
+
+    "12563" : { 
+        "p1" : "Convert typed or printed text into digital data."
+    }, 
+
+    "9053" : {
+        "p1" : "Hardware-Assisted Authentication"
+    },
+
+
+    "1235" : { 
+        "p1" : "Scan documents anywhere with pocket-sized verification tools"
+    },
+
+    "53143" : { 
+        "p1" : "RFID reading"
+    },
+
+    "12355" : { 
+        "p1" : "Verify documents equipped with Radio Frequency Identification (RFID) chips."
+    },
+
+    "11111" : { 
+        "p1" : "Face matching"
+    },
+
+    "7654" : {
+        "p1" : "Make sure that a document’s presenter and its owner are the same person."
+    }, 
+
+    "23131" : { 
+        "p1" : "Try our product for free"
+    },
+
+    "22222" : { 
+        "p1" : "Get a Demo!"
+    },
+
+    "6432" : { 
+        "p1" : "Contact"
+    },
+
+    "5674" : {
+        "p1" : "Send Mail"
+    },
+
+    "12312" : {
+        "p1" : "Language"
+    },
+
+    "21555" : { 
+        "p1" : "UTIL LINKS"
+    },
+
+    "2456" : { 
+        "p1" : "Our team"
+    },
+
+    "12121" : { 
+        "p1" : "Work with us"
+    },
+
+    "55554" : { 
+        "p1" : "CONTACT"
+    },
+
+    "6754" : { 
+        "p1" : "RESOURCES"
+    },
+
+    "8741" : { 
+        "p1" : "Privacy Policy"
+    },
+
+    "4131" : { 
+        "p1" : "Community Rules"
+    }
+
+
+
+
+
+
+
+   
+
+}

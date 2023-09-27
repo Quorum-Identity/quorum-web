@@ -1,0 +1,158 @@
+{
+    "header" : { 
+        "hola":"Hola Mundo"
+    },
+
+    "sub_navbar" : { 
+        "parrafo" : "Vota con tu teléfono desde cualquier parte del mundo"
+    },
+
+    "button_p" : {
+        "title" : "Preguntas frecuentes"
+    },
+
+    "button_p2" : { 
+         "title" : "Empezar Ahora"
+    },
+    "parrafo-argentina" : {
+        "h1VoteArgentina" : "Hay más de 36 millones de votantes sólo en Argentina"
+    },
+    "parrafoSobrelosvotos" : { 
+        "p1" : "Miles de millones de personas ejercen su derecho al voto en diversos procesos electorales. Desde las elecciones presidenciales hasta las elecciones locales, la votación es una herramienta poderosa para expresar la voluntad de los ciudadanos y determinar la dirección política de las naciones. La participación activa de los votantes es esencial para defender la democracia y garantizar que las voces de todos sean escuchadas en el proceso de toma de decisiones."
+    },
+
+    "titulosection" : { 
+        "h1" : "Con una interfaz de usuario sencilla"
+    },
+
+    
+    "121231" : {
+        "p1" : "Con una aplicación que se encarga de la seguridad y transparencia de los procesos electorales. Agregar una interfaz de usuario simple e intuitiva"  
+     },
+
+     "213981" : {
+         "p1" : "Consiguelo en google play"
+     },
+
+     "27651" : { 
+         "p1" : "Disponible en la App Store"
+     },
+    
+     "12312312": { 
+        "p1" : "El proceso KYC es proporcionado por Regula Forensics"
+    },
+
+    "213125" : { 
+        "p1" : "El proceso KYC (Know Your Customer) es un conjunto de medidas y verificaciones que implementan las empresas para confirmar la identidad de sus clientes. Está diseñado para prevenir el lavado de dinero, el financiamiento del terrorismo y otras actividades ilícitas, garantizando al mismo tiempo la transparencia y la seguridad en las relaciones comerciales. Durante el proceso KYC, los clientes deben proporcionar información y documentos que permitan a la empresa verificar de manera confiable su identidad antes de iniciar cualquier forma de relación o transacción comercial.."
+    },
+
+    "46742" : {
+        "p1" : "Tecnologías que utilizamos"
+    },
+
+    "2135" : { 
+        "p1" : "Identificación del tipo de documento"
+    },
+
+    "451234" : { 
+        "p1" : "Verifique datos de más de 12 000 documentos internacionales utilizando IA y ML."
+    }, 
+
+    "57421" : { 
+        "p1" : "Detección de Livennes"
+    },
+
+    "576381": { 
+        "p1" : "Examina la vida de una persona con IA y algoritmos de aprendizaje automático.."
+    },
+
+    "2451" : {
+        "p1" : "Reconocimiento óptico de caracteres (OCR)"
+    }, 
+
+    "12563" : { 
+        "p1" : "Convierta texto mecanografiado o impreso en datos digitales."
+    },
+
+    "9053" : {
+        "p1" : "Autenticación asistida por hardware"
+    },
+
+
+    "1235" : { 
+        "p1" : "Escanee documentos en cualquier lugar con herramientas de verificación de bolsillo"
+    },
+
+    "53143" : { 
+        "p1" : "Lectura RFID"
+    },
+
+    "12355" : { 
+        "p1" : "Verifique documentos equipados con chips de identificación por radiofrecuencia (RFID)."
+    },
+
+    "11111" : { 
+        "p1" : "Coincidencia de caras"
+    },
+
+    "7654" : {
+        "p1" : "Asegúrese de que el presentador de un documento y su propietario sean la misma persona."
+    }, 
+
+    "23131" : { 
+        "p1" : "Pruebe nuestro producto gratis"
+    },
+
+    "22222" : { 
+        "p1" : "¡Obtenga una demostración!"
+    },
+
+    "6432" : { 
+        "p1" : "Contacto"
+    },
+
+    "5674" : {
+        "p1" : "Enviar correo"
+    },
+
+    "12312" : {
+        "p1" : "Idioma"
+    },
+
+    "21555" : { 
+        "p1" : "ENLACES UTILES"
+    },
+
+    "2456" : { 
+        "p1" : "Nuestro equipo"
+    },
+
+    "12121" : { 
+        "p1" : "Trabaja con nosotros"
+    },
+
+    "55554" : { 
+        "p1" : "CONTACTO"
+    },
+
+    "6754" : { 
+        "p1" : "RECURSOS"
+    },
+
+    "8741" : { 
+        "p1" : "Política de privacidad"
+    },
+
+    "4131" : { 
+        "p1" : "Reglas de la comunidad"
+    }
+
+
+
+
+
+
+
+
+ 
+}

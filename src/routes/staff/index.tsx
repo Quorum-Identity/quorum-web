@@ -1,11 +1,14 @@
 import StaffCard from "../../components/card-staff/StaticCard"
 import FooterApp from "../../components/footer/footer"
 import Navbar from "../../components/navbar"
+import { useTranslation } from "react-i18next"
 
 const Staff = () => {
+    const [t,i18n] = useTranslation('global');
+
     return (
         <>
-            <Navbar/>
+            <Navbar t = {t} i18n={i18n}/>
             <div className="container">
                 <h1 className="m1" style={{color: 'black', marginLeft: '0px'}}>Who makes this possible?</h1>
                 <p>At Quorum, we believe in the importance of a strong and collaborative work culture. We know that a positive work environment not only increases employee satisfaction, but also drives innovation and project success. Our work culture is based on key principles that guide our actions and decisions every day.</p>
@@ -15,7 +18,7 @@ const Staff = () => {
                 <StaffCard/>
             </div>
             
-            <FooterApp/>
+            <FooterApp t = {t} i18n={i18n}/>
         </>
     )
 }

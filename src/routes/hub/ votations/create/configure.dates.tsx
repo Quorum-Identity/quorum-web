@@ -1,7 +1,9 @@
-import { FunctionComponent, useState } from "react";
-import { useForm } from "react-hook-form";
+import { FunctionComponent, SetStateAction,  useRef,  useState } from "react";
+import { set, useForm } from "react-hook-form";
 import { SwitchComponentChildrenType } from "../../../../utils/general";
 import { locations } from "../../../../models/votation.model";
+
+
 
 
 const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = () => {
@@ -10,9 +12,39 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
         handleSubmit,
         formState: { errors },
     } = useForm();
-    const [type, setType] = useState<number>(0);
-    return (
-            <form className="w100" onSubmit={handleSubmit((data) => console.log(data))}>
+    
+    
+    const selectOption = useRef(null)
+    console.log(selectOption)
+    
+    const [type, setType] = useState<number>(0);{}
+   
+    
+   const result = locations.map( pickup => {
+       const match = locations.find(addr => addr.id === pickup.id);
+       return {
+           
+           ciudades: match?.ciudades,
+           id : match?.id,
+           name : match?.nombre
+           
+       }
+       
+   })
+   
+
+    const [municipios,setMunicipios] = useState('');
+
+   const resultaditos = locations.find( ctr => {
+     
+       if (ctr.id >= type) {
+           return ctr.ciudades
+       }
+   })
+ 
+     return (
+
+     <form className="w100" onSubmit={handleSubmit((data) => console.log(data))} ref={selectOption}>
 
                 <div>
                     <p className="">Image banner</p>
@@ -28,20 +60,42 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
                     </div>
                     <div className="w100">
                         <p className="">Type</p>
-                        <select onChange={(e: any) => setType(e.target!.value)}>
-                            <option value={0} label="Municipal"></option>
-                            <option value={1} label="Provincial"></option>
-                            <option value={2} label="Nacional"></option>
+                         
 
-                        </select>
+                         <select  >
+                           
+                                <option value="">Provincial</option>
+                                <option value="">Nacional</option>
+                                <option value=""></option>
 
+                         </select>
+
+                         
                     </div>
+
+
+                    <div className="w100" >
+                        <p className="">Municipios</p>
+                         
+                            
+                         <select value={municipios} className="options" onChange={(e) => setMunicipios(e.target.value)}>
+                              
+                             {
+                                resultaditos?.ciudades.map((ciudad) => (
+                                    <option  ref={selectOption}  value={ciudad.id}>{ciudad.nombre}</option>
+                                ))
+                             }
+                         </select>
+                  
+                    </div>
+
+
                     <div className="w100">
                         <p className="">Location</p>
-                        <select >
-                            {locations.map((e:any) => {
-                                return <option label={e.nombre} value={e.id}></option>
-                            })}
+                        <select value={type}   onChange={(e:any) => setType(e.target!.value)}    >
+                           
+                            {locations.map((e:any,index) => {
+                           return <option  label={e.nombre} value={e.id} key={index}></option>})}
                         </select>
                         
                     </div>

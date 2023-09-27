@@ -5,10 +5,12 @@ import { useEffect } from "react";
 import Icons from '@reacticons/ionicons'
 import Navbar from "../../components/navbar";
 import FooterApp from "../../components/footer/footer";
-
+import './styles.css'
+import { useTranslation } from "react-i18next"
 
 
 const PricingHub = () => {
+    const [t,i18n] = useTranslation('global');
     const {user} = useAppSelector(getStore);
     const navigate = useNavigate();
     useEffect(() => {
@@ -19,7 +21,7 @@ const PricingHub = () => {
     }, []);
     return (
     <div className="">
-        <Navbar/>
+        <Navbar t = {t} i18n={i18n}/>
        
         <div >
             <img width='100%' src="https://cdn.discordapp.com/attachments/1128670410058252369/1128822422674624633/Politicos.png"/>
@@ -196,7 +198,7 @@ const PricingHub = () => {
             </article>
         </div>
         </div>
-        <FooterApp/>
+        <FooterApp t = {t} i18n={i18n}/>
     </div>
     )
 }

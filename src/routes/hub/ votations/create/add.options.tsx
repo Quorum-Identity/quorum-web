@@ -12,6 +12,8 @@ const AddVotationOptions: FunctionComponent<SwitchComponentChildrenType> = () =>
         handleSubmit,
         formState: { errors },
     } = useForm();
+      console.log(value);
+    //   console.log(options);
       
     return (
         <div className="add-options-votation"> 

@@ -33,7 +33,7 @@ a{
 button{
   font-family: 'Roboto', sans-serif;
 }
-p{
+p, li, ul{
   font-weight: 100 !important;
   text-align:justify;
   word-wrap: keep-all;

@@ -21,6 +21,9 @@ import VotationsHub from "./routes/hub/ votations";
 import PricingHub from "./routes/pricing";
 import ConfigurationsUser from "./routes/hub/Configuration/userconfig";
 import StaffCard from "./components/card-staff/StaticCard";
+
+
+
 import Staff from "./routes/staff";
 
 const App = () =>  {
@@ -54,11 +57,11 @@ const App = () =>  {
 
               <Route path="/pricing" element={<PricingHub/>}/>
 
-              //Configuration
+              //Configuration//
 
               <Route  path="/configuration" element= {<ConfigurationsUser/>}/>
               
-                <Route path="/staff" element={<Staff/>}/>
+              <Route path="/staff" element={<Staff/>}/>
             </Routes>
         </Router>
         : <></>}
