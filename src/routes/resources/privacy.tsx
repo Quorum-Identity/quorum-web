@@ -1,9 +1,12 @@
 import FooterApp from "../../components/footer/footer"
 import Navbar from "../../components/navbar"
+import { useTranslation } from "react-i18next"
 
 const PrivacyPolicy = () => {
+    const [t,i18n] = useTranslation('global');
+
     return <>
-        <Navbar/>
+        <Navbar t = {t} i18n={i18n}/>
         <div className="container mt2">
             <h1 >Privacy Policy</h1>
             <h2 style={{fontSize: '2rem'}}>1. Information Collection</h2>
@@ -24,7 +27,7 @@ const PrivacyPolicy = () => {
                 By using our application, you agree to the terms and conditions of this Privacy Policy. If you do not agree with these terms, we ask that you do not use our services.
                 </p>
             </div>
-        <FooterApp/>
+        <FooterApp t = {t} i18n={i18n}/>
     
     </>
 }

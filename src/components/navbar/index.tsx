@@ -21,13 +21,11 @@ const Navbar = ({t , i18n}:any) => {
           
         </div>
         <div className='navbar-items'>
-            <button className="navbar-item" onClick={() => navigate('/login', {replace: true})} >
-             Hub <IonIcon name="open-outline" />
-            </button>
+            
             
            <div className='container-navbar'  >
               <h3 >{t("12312.p1")} <IonIcon className='iconsss' name="chevron-up-outline"></IonIcon></h3>
-            <div className='navbar-hijo'>
+              <div className='navbar-hijo'>
            
             <div className='navbar-list'   >
                   <ul>
@@ -49,7 +47,9 @@ const Navbar = ({t , i18n}:any) => {
            
              
             </div>
-            
+            <button className="navbar-item" onClick={() => navigate('/login', {replace: true})} >
+             Hub <IonIcon name="open-outline" />
+            </button>
         </div>
 
       </div>

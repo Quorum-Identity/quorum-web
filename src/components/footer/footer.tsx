@@ -2,11 +2,15 @@ import React from "react";
 import  './footer.css';
 import  logo  from "../../assets/logomodern2.png"
 import IonIcon from "@reacticons/ionicons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const FooterApp = ({t,i18n}:any) => {
+    const navigate = useNavigate();
     return (
         <div className="footer">
         <div className="displayFlex between displayBlockResponsive">
+            
+            
+            
             
             <div>
                 <img className="footer-logo" style={{filter: 'saturate(2)'}} width="350px" height="175px" alt="logo" src={logo}/>

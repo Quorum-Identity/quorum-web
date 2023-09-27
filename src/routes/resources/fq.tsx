@@ -1,9 +1,12 @@
 import FooterApp from "../../components/footer/footer"
 import Navbar from "../../components/navbar"
+import { useTranslation } from "react-i18next"
 
 const FrequentQuestions = () => {
+    const [t,i18n] = useTranslation('global');
+
     return <>
-        <Navbar/>
+        <Navbar t = {t} i18n={i18n}/>
         <div className="container mt2">
             <h1 >Frequent Questions</h1>
             <h2 style={{fontSize: '2rem'}}>1. Introduction</h2>
@@ -17,7 +20,7 @@ const FrequentQuestions = () => {
             <p>2.3. Personal data — any information that enables direct or indirect, i.e. in connection with other data, identification of you as a natural person (data subject), including name, surname, patronymic, contact information, Face image data, data that identify user device, as well as data that permit identification of the procedures and methods of Website and/or service use by the User.</p>
             <p>2.5. Data processing — means any action or a set of actions implemented with the data by using automated equipment or without such equipment, for instance, collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction, etc.</p>
         </div>
-        <FooterApp/>
+        <FooterApp t = {t} i18n={i18n}/>
     
     </>
 }
