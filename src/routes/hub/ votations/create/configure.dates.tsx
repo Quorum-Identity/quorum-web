@@ -17,7 +17,7 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
     const selectOption = useRef(null)
     console.log(selectOption)
     
-    const [type, setType] = useState<number>(0);{}
+    const [province, SetProvince] = useState<number>(0);{}
    
     
    const result = locations.map( pickup => {
@@ -34,10 +34,10 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
    
 
     const [municipios,setMunicipios] = useState('');
-
+   const [type, setType] = useState(0);
    const resultaditos = locations.find( ctr => {
      
-       if (ctr.id >= type) {
+       if (ctr.id >= province) {
            return ctr.ciudades
        }
    })
@@ -46,19 +46,12 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
 
      <form className="w100" onSubmit={handleSubmit((data) => console.log(data))} ref={selectOption}>
 
-                <div>
+                <div className="w100">
                     <p className="">Image banner</p>
                     <input className=" w100" {...register('image', { required: true })} type="file" style={{width: '90%'}} />
                         
                 </div>
-                    
-                <div className="displayFlex between" style={{width: '90%'}}>
-                    <div className="w100">
-                        <p className="">Image banner</p>
-                        <input className="" {...register('name', { required: true })} type="text" />
-                        
-                    </div>
-                    <div className="w100">
+                <div className="w100">
                         <p className="">Type</p>
                          
 
@@ -66,14 +59,27 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
                            
                                 <option value="">Provincial</option>
                                 <option value="">Nacional</option>
-                                <option value=""></option>
+                                <option value="">Municipal</option>
 
                          </select>
 
                          
                     </div>
+                    
+                <div className="displayFlex between" style={{width: '100%'}}>
+                    
+                    
 
-
+                    
+                    <div className="w100">
+                        <p className="">Provincia</p>
+                        <select className="w100" value={province}   onChange={(e:any) => SetProvince(e.target!.value)}    >
+                           
+                            {locations.map((e:any,index) => {
+                           return <option  label={e.nombre} value={e.id} key={index}></option>})}
+                        </select>
+                        
+                    </div>
                     <div className="w100" >
                         <p className="">Municipios</p>
                          
@@ -90,15 +96,7 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
                     </div>
 
 
-                    <div className="w100">
-                        <p className="">Location</p>
-                        <select value={type}   onChange={(e:any) => setType(e.target!.value)}    >
-                           
-                            {locations.map((e:any,index) => {
-                           return <option  label={e.nombre} value={e.id} key={index}></option>})}
-                        </select>
-                        
-                    </div>
+                    
                    
                 </div>
                 

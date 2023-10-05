@@ -39,9 +39,9 @@ const CreateVotation = () => {
       <div className="displayFlex">
         <NavbarHub />
        
-        <div className='hub-container votation'>
+        <div className='hub-container votation' style={{padding: '2rem'}}>
           <h1>{listelements[activeComponent].title}</h1>
-            <div className="create-votation">
+            <div className="create-votation" >
                 
             <SwitchComponents active={listelements[activeComponent].name}>
               {listelements.map((e) => e.element)}

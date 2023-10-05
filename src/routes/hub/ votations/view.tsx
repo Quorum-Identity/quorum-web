@@ -160,21 +160,25 @@ const ViewVotation = () => {
 
 
       
-      return <div className="container">
-        <IonIcon onClick={() => navigate('/votations', {replace: true})} style={{cursor: 'pointer',margin: '0rem', fontSize: '2rem'}} name="chevron-back-outline"/>
-        <div className="table-white-background" style={{width : '1200px', margin: '20px auto' }}>
+      return <div style={{margin: '5rem'}}>
+        <div >
+          <IonIcon onClick={() => navigate('/votations', {replace: true})} style={{cursor: 'pointer',margin: '0rem', fontSize: '2rem'}} name="chevron-back-outline"/>
+          <h1>Paso 2023</h1>
+        </div>
+
+        <div className="table-white-background" style={{width : '100%', margin: '20px auto' }}>
             <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
           <Bar data={config.data}    />
           </div>
         
 
-          <div className="table-white-background" style={{width : '1200px', margin: '20px auto' }} >
+          <div className="table-white-background" style={{width : '100%', margin: '20px auto' }} >
             <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
             <Line data={line2.data}   />
           </div>
 
 
-          <div className="table-white-background" style={{width : '1200px', margin: '20px auto' }}>
+          <div className="table-white-background" style={{width : '100%', margin: '20px auto' }}>
             <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
             <Line data={line3.data}   />
           </div>
