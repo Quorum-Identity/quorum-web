@@ -13,7 +13,7 @@ const NavbarHub = () => {
    <div style={{cursor: 'pointer', zIndex: 0}} onClick={() => {setCollapsed(!collapsed)}}>
       <Sidebar style={{height: '100%'}} collapsed={collapsed}>
       <Menu 
-         rootStyles={{height: '100%'}}
+         rootStyles={{height: '100%', minHeight: '100vh'}}
          menuItemStyles={{
             button: {
             // the active class will be added automatically by react router

@@ -160,7 +160,7 @@ const ViewVotation = () => {
 
 
       
-      return <div style={{margin: '5rem'}}>
+      return <div style={{margin: '6rem', marginLeft: '2rem'}}>
         <div >
           <IonIcon onClick={() => navigate('/votations', {replace: true})} style={{cursor: 'pointer',margin: '0rem', fontSize: '2rem'}} name="chevron-back-outline"/>
           <h1>Paso 2023</h1>

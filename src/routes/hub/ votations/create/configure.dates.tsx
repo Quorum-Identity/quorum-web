@@ -34,7 +34,7 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
    
 
     const [municipios,setMunicipios] = useState('');
-   const [type, setType] = useState(0);
+   const [type, setType] = useState(-1);
    const resultaditos = locations.find( ctr => {
      
        if (ctr.id >= province) {
@@ -43,23 +43,23 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
    })
  
      return (
-
      <form className="w100" onSubmit={handleSubmit((data) => console.log(data))} ref={selectOption}>
+                <h1 style={{fontSize: '1rem', color: 'tomato'}}>Importante: todos los datos se pueden editar posterior a crear la votacion pero no despues de que esta inicie.</h1>
 
                 <div className="w100">
-                    <p className="">Image banner</p>
+                    <p className="">Banner</p>
                     <input className=" w100" {...register('image', { required: true })} type="file" style={{width: '90%'}} />
                         
                 </div>
                 <div className="w100">
-                        <p className="">Type</p>
+                        <p className="">Tipo</p>
                          
 
-                         <select  >
-                           
-                                <option value="">Provincial</option>
-                                <option value="">Nacional</option>
-                                <option value="">Municipal</option>
+                         <select onChange={(e) => setType(Number(e.target.value) ?? -1) } >
+                                <option value="-1">Seleccionar</option>
+                                <option value="0">Nacional</option>
+                                <option value="1">Provincial</option>
+                                <option value="2">Municipal</option>
 
                          </select>
 
@@ -73,7 +73,7 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
                     
                     <div className="w100">
                         <p className="">Provincia</p>
-                        <select className="w100" value={province}   onChange={(e:any) => SetProvince(e.target!.value)}    >
+                        <select className="w100" value={province}   onChange={(e:any) => SetProvince(e.target!.value)}    disabled={type < 1 ? true : false}>
                            
                             {locations.map((e:any,index) => {
                            return <option  label={e.nombre} value={e.id} key={index}></option>})}
@@ -84,7 +84,7 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
                         <p className="">Municipios</p>
                          
                             
-                         <select value={municipios} className="options" onChange={(e) => setMunicipios(e.target.value)}>
+                         <select value={municipios} className="options" onChange={(e) => setMunicipios(e.target.value)} disabled={type !== 2 ? true : false}>
                               
                              {
                                 resultaditos?.ciudades.map((ciudad) => (
@@ -100,9 +100,9 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
                    
                 </div>
                 
-                <p className="">Date start</p>
+                <p className="">Inicio</p>
                 <input className="" {...register('name', { required: true })} type="datetime-local" style={{width: '90%'}}/>
-                <p className="">Date end</p>
+                <p className="">Fin</p>
                 <input className="" {...register('name', { required: true })} type="datetime-local" style={{width: '90%'}} />
                 {errors.lastName && <p>Last name is required.</p>}
                 {errors.age && <p>Please enter number for age.</p>}
