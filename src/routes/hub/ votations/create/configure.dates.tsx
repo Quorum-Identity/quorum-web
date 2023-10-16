@@ -84,7 +84,7 @@ const ConfigureVotationDates: FunctionComponent<SwitchComponentChildrenType> = (
                         <p className="">Municipios</p>
                          
                             
-                         <select value={municipios} className="options" onChange={(e) => setMunicipios(e.target.value)} disabled={type !== 2 ? true : false}>
+                         <select value={municipios} style={{cursor: 'pointer'}} className="options" onChange={(e) => setMunicipios(e.target.value)} disabled={type !== 2 ? true : false}>
                               
                              {
                                 resultaditos?.ciudades.map((ciudad) => (

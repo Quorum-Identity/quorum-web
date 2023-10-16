@@ -13,7 +13,7 @@ import {
 
   import { Bar, Chart, Pie, Line} from 'react-chartjs-2';
 import { useRef } from "react";
-
+import Banner from '../../../assets/firstwallpaper.png';
 
   ChartJS.register(
     LinearScale,
@@ -160,27 +160,31 @@ const ViewVotation = () => {
 
 
       
-      return <div style={{margin: '6rem', marginLeft: '2rem'}}>
-        <div >
-          <IonIcon onClick={() => navigate('/votations', {replace: true})} style={{cursor: 'pointer',margin: '0rem', fontSize: '2rem'}} name="chevron-back-outline"/>
-          <h1>Paso 2023</h1>
-        </div>
-
-        <div className="table-white-background" style={{width : '100%', margin: '20px auto' }}>
-            <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
-          <Bar data={config.data}    />
+      return <div style={{position: 'relative'}}>
+        <img style={{opacity: '0.9'}} src='https://cdn.discordapp.com/attachments/1128670410058252369/1128822422674624633/Politicos.png' width='100%'/>
+        <div  style={{position: 'absolute', top: '1rem', left: '1rem'}}>
+            <IonIcon onClick={() => navigate('/votations', {replace: true})} style={{cursor: 'pointer',margin: '0rem', fontSize: '2rem', color: 'white'}} name="chevron-back-outline"/>
           </div>
-        
+        <div style={{margin: '6rem', marginLeft: '2rem'}}>
 
-          <div className="table-white-background" style={{width : '100%', margin: '20px auto' }} >
-            <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
-            <Line data={line2.data}   />
-          </div>
-
+         <h1 style={{color: 'black'}}>Paso 2023</h1>
 
           <div className="table-white-background" style={{width : '100%', margin: '20px auto' }}>
-            <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
-            <Line data={line3.data}   />
+              <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
+            <Bar data={config.data}    />
+            </div>
+          
+
+            <div className="table-white-background" style={{width : '100%', margin: '20px auto' }} >
+              <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
+              <Line data={line2.data}   />
+            </div>
+
+
+            <div className="table-white-background" style={{width : '100%', margin: '20px auto' }}>
+              <h1 style={{fontSize: '1.5rem'}}> Pie</h1>
+              <Line data={line3.data}   />
+            </div>
           </div>
     </div>
 }

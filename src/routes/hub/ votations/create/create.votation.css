@@ -176,6 +176,10 @@
     cursor: none;
 }
 
+.icon-stepfinal *{
+    font-size: 4rem;
+    color: green;
+}
 @media only screen and (max-width: 850px) {
 	.create-votation .select-type-votation-child{
         display: block;
