@@ -97,33 +97,18 @@ const ConfigurationsUser = () => {
                                 <form   >
                                 <section>
                                                         
-                                      <p>Provincias</p>
+                                      <p>Pais</p>
                                              <select  onClick={handleClick} name="provincias">
             
-                                             {
-                                                  data.map ((el:any,id) => {
-                                                    return <option  onChange={(e:any)=> setData(e.target.value) } value={el.nombre} key={id} >{`${el.nombre}`}</option>
-                                                  } )
-                                              }
-                    
+                                             <option  onChange={(e:any)=> setData(e.target.value) } value={0}>Argentina</option>
+                                             <option  onChange={(e:any)=> setData(e.target.value) } value={1}>Uruguay</option>
+                                             <option  onChange={(e:any)=> setData(e.target.value) } value={2}>Italia</option>
+
                                              </select>
                                                                                       
                                  </section>
                               
-                                 <section>
-                                                                                      
-                                <p >Municipios</p>
-
-                                <select name="Municipios" id="">
-                                      {
-                                          data.map ((el:any,id) => {
-                                            return <option disabled value={data} onChange={()=>handleChance} key={id}>{`${el.nombre}`}</option>
-                                          } )
-                                      }
-                    
-                             </select>
-                              
-                                 </section>
+                                 
                               
                               
                                  

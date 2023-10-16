@@ -27,7 +27,7 @@ const PricingHub = () => {
             <img width='100%' src="https://cdn.discordapp.com/attachments/1128670410058252369/1128822422674624633/Politicos.png"/>
           </div>
         <div className="container">
-        <h1 className="m1" style={{color: 'black'}}>Get your a custom plan</h1>
+        <h1 className="m1" style={{color: 'black'}}>{t("6543.p1")}</h1>
         <div className='linea-container displayBlockResponsive'>
             <article className='card'>
                 <div className='card-body'>
@@ -35,13 +35,13 @@ const PricingHub = () => {
                        <a href="#">😄</a>
                     </div>
                     <section className='card-info'>
-                            <h3>Personal</h3>
-                            <p>Perfect plan for starters</p>
-                            <h2>Free</h2>
-                            <p>For a Lifetime</p>
+                            <h3>{t("654375.p1")}</h3>
+                            <p>{t("6546.p1")}</p>
+                            <h2>{t("65469.p1")}</h2>
+                            <p>{t("6509.p1")}</p>
                            
                             <button className="button">
-                                Current Plan
+                            {t("650987.p1")}
                             </button>
 
                             <div className="group-lista">
@@ -49,13 +49,13 @@ const PricingHub = () => {
                                     <div>
                                     <li>
                                         <Icons name="checkmark-outline" /> 
-                                        <p>Detailed post analytics</p>
+                                        <p>{t("6509872.p1")}</p>
                                         </li>
                                     </div>
 
                                 <div>
                                 <li>
-                                        <p>Shared with 5 teams memebers</p>
+                                        <p>{t("65098722.p1")}</p>
                                         <Icons name="checkmark-outline" /> 
                                 </li>
                                 </div>
@@ -63,19 +63,19 @@ const PricingHub = () => {
                                 <div>
                                 <li>
                                         <Icons name="checkmark-outline"  />        
-                                        <p>Syn across devices</p>
+                                        <p>{t("650965.p1")}</p>
                                 </li>
                                 </div>
 
                                 <div>
                                 <li>
                                         <Icons name="checkmark-outline" />   
-                                        <p>Reach and impressions analytics</p>
+                                        <p>{t("6509653.p1")}</p>
                                         </li>
                                 </div>
 
                                 <li>
-                                        <p>Up to 6 social profile</p>
+                                        <p>{t("65096537.p1")}</p>
                                         <Icons name="checkmark-outline" /> 
                                 </li>
                                     
@@ -93,43 +93,43 @@ const PricingHub = () => {
                     </div>
                     <section className='card-info'>
                         <div className="card-2">
-                            <h3>Professional</h3>
-                            <p>For users who want to do more</p>
+                            <h3>{t("650965371.p1")}</h3>
+                            <p>{t("6509653711.p1")}</p>
                             <h2>$99</h2>
-                            <p>For a Lifetime</p>
+                            <p>{t("65096537114.p1")}</p>
                             
                             <button className="button boton">
-                            Current Plan
+                            {t("650987.p1")}
                             </button>
                         
                             <div className="group-lista list-2">
                                 <ul>
                                 <li>
-                                   <p>Detailed post analytics</p>
+                                   <p>{t("650965371143.p1")}</p>
                                    <Icons name="checkmark-outline"  />        
                                 </li>
 
                                 <li>
 
-                                 <p>Unlimited teams memebers</p>
+                                 <p>{t("65.p1")}</p>
                                  <Icons name="checkmark-outline"  />        
                                 </li>
 
                                 <li>
                                         
-                                 <p>Syn across devices</p>
+                                 <p>{t("654.p1")}</p>
                                  <Icons name="checkmark-outline"  />        
                                 </li>
 
                                 <li>
                                         
-                                 <p>Reach and impressions analytics</p>
+                                 <p>{t("6544.p1")}</p>
                                  <Icons name="checkmark-outline"  />        
                                 </li>
 
                                 <li>
                                         
-                                 <p>Up to 6 social profile</p>
+                                 <p>{t("65441.p1")}</p>
                                  <Icons name="checkmark-outline"  />        
                                 </li>
                                     
@@ -149,42 +149,42 @@ const PricingHub = () => {
                     </div>
                     <section className='card-info'>
                         <div>
-                            <h3>Interprice</h3>
-                            <p>Analyze your company</p>
+                            <h3>{t("654415.p1")}</h3>
+                            <p>{t("61.p1")}</p>
                             <h2>$184</h2>
-                            <p>For a Lifetime</p>
+                            <p>{t("612.p1")}</p>
                             <button className="button">
-                            Current Plan
+                            {t("650987.p1")}
                             </button>
 
                             <div className="group-lista">
                                 <ul>
                                 <li>
-                                   <p>Detailed post analytics</p>
+                                   <p>{t("6509872.p1")}</p>
                                    <Icons name="checkmark-outline"  />        
                                 </li>
 
                                 <li>
 
-                                 <p>Unlimited teams memebers</p>
+                                 <p>{t("6128.p1")}</p>
                                  <Icons name="checkmark-outline"  />        
                                 </li>
 
                                 <li>
                                         
-                                 <p>Syn across devices</p>
+                                 <p>{t("61288.p1")}</p>
                                  <Icons name="checkmark-outline"  />        
                                 </li>
 
                                 <li>
                                         
-                                 <p>Reach and impressions analytics</p>
+                                 <p>{t("664.p1")}</p>
                                  <Icons name="checkmark-outline"  />        
                                 </li>
 
                                 <li>
                                         
-                                 <p>Unlimited social profile</p>
+                                 <p>{t("6640.p1")}</p>
                                  <Icons name="checkmark-outline"  />        
                                 </li>
                                     

@@ -25,6 +25,8 @@ import StaffCard from "./components/card-staff/StaticCard";
 
 
 import Staff from "./routes/staff";
+import ViewVotation from "./routes/hub/ votations/view";
+import TermsConditions from "./routes/resources/terms";
 
 const App = () =>  {
   const dispatch = useAppDispatch();
@@ -44,7 +46,9 @@ const App = () =>  {
               <Route path="/login" element={<LoginView/>}></Route>
               <Route path="/forgot" element={<ForgotView/>}/>
 
-              <Route path="/privacy-rules" element={<PrivacyPolicy/>}></Route>
+              <Route path="/privacy" element={<PrivacyPolicy/>}></Route>
+              <Route path="/terms" element={<TermsConditions/>}></Route>
+
               <Route path="/fq" element={<FrequentQuestions/>}></Route>
               <Route path="/create" element={<CreateVotation/>}/>
               
@@ -52,6 +56,7 @@ const App = () =>  {
               //HUB
               <Route path="/hub" element={<HomeHub/>}/>
               <Route path="/votations" element={<VotationsHub/>}/>
+              <Route path="/votations-view" element={<ViewVotation/>}/>
 
               //Cards
 

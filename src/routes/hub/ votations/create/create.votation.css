@@ -102,7 +102,7 @@
     
 }
 .add-options-votation{
-    margin-top: 3rem
+    margin-top: 1rem
 }
 
 .add-options-votation .add-icon{
@@ -135,12 +135,14 @@
 }
 .add-options-votation .optionSelected{
     border-bottom: 1px solid rgba(0, 0, 0, 0.106);
-    padding: 1rem;
+    
+    padding: .5rem;
+    padding-top: 0rem;
     justify-content: space-between;
 }
 
 .add-options-votation .optionSelected span{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color:rgb(72, 72, 72);
 }
 
@@ -174,6 +176,10 @@
     cursor: none;
 }
 
+.icon-stepfinal *{
+    font-size: 4rem;
+    color: green;
+}
 @media only screen and (max-width: 850px) {
 	.create-votation .select-type-votation-child{
         display: block;

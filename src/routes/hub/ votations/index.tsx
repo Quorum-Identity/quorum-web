@@ -4,7 +4,7 @@ import { getStore } from "../../../hooks/store/user.slice";
 import { useAppSelector } from "../../../hooks/store/store";
 import { useEffect } from "react";
 import IonIcon from "@reacticons/ionicons";
-import GetDemo from "../../resources/getdemo";
+import ChartVotations from "../charts/initial";
 import UserNavbar from "../components/UserNavbar/panelnombreuser";
 
 
@@ -40,19 +40,22 @@ const VotationsHub = () => {
                     
                 </div>
                 <div className="table-white-background">
-                    <h1 style={{fontSize: '1.5rem'}}> Eleccionas Primarias</h1>
-                    
-                    <IonIcon name="chevron-forward-outline" style={{fontSize: '1.5rem', color: 'grey', cursor: 'pointer' ,position: 'absolute', top: '2rem', right: '1rem'}}/>
+                    <p style={{margin: '0rem', color: 'grey', fontSize: '1rem'}}>Moron, Buenos Aires, Argentina{'  (18/9/2019, 8:30 - 18/9/2019, 18:30)'}</p>
+                    <h1 style={{fontSize: '1.5rem', marginTop: '.1rem'}}> Eleccionas Primarias</h1>
+                    <IonIcon name="create-outline" style={{fontSize: '1.5rem', color: '#F76301', cursor: 'pointer' ,position: 'absolute', top: '1rem', right: '3rem'}}/>
+                    <IonIcon name="chevron-forward-outline" style={{fontSize: '1.5rem', color: 'grey', cursor: 'pointer' ,position: 'absolute', top: '1rem', right: '1rem'}}/>
                 </div>
                 <div className="table-white-background">
-                    <h1 style={{fontSize: '1.5rem'}}> Paso 2023</h1>
-                    <GetDemo/>
-                    <IonIcon name="chevron-forward-outline" style={{fontSize: '1.5rem', color: 'grey', cursor: 'pointer' ,position: 'absolute', top: '2rem', right: '1rem'}}/>
+                    <p style={{margin: '0rem', color: 'grey', fontSize: '1rem'}}>Argentina{'  (18/9/2019, 8:30 - 18/9/2019, 18:30)'}</p>
+                    <h1 style={{fontSize: '1.5rem', marginTop: '.1rem'}}> Paso 2023</h1>
+                    <IonIcon name="create-outline" style={{fontSize: '1.5rem', color: '#F76301', cursor: 'pointer' ,position: 'absolute', top: '1rem', right: '3rem'}}/>
+                    <IonIcon name="chevron-forward-outline" style={{fontSize: '1.5rem', color: 'grey', cursor: 'pointer' ,position: 'absolute', top: '1rem', right: '1rem'}}/>
                 </div>
                 <div className="table-white-background">
-                    <h1 style={{fontSize: '1.5rem'}}> Paso 2023</h1>
-                    <GetDemo/>
-                    <IonIcon name="chevron-forward-outline" style={{fontSize: '1.5rem', color: 'grey', cursor: 'pointer' ,position: 'absolute', top: '2rem', right: '1rem'}}/>
+                    <p style={{margin: '0rem', color: 'grey', fontSize: '1rem'}}>Argentina{'  (18/9/2019, 8:30 - 18/9/2019, 18:30)'}</p>
+                    <h1 style={{fontSize: '1.5rem', marginTop: '.1rem'}}> Paso 2023</h1>
+                    <IonIcon name="create-outline" style={{fontSize: '1.5rem', color: '#F76301', cursor: 'pointer' ,position: 'absolute', top: '1rem', right: '3rem'}}/>
+                    <IonIcon name="chevron-forward-outline" style={{fontSize: '1.5rem', color: 'grey', cursor: 'pointer' ,position: 'absolute', top: '1rem', right: '1rem'}}/>
                 </div>
             </div>
         </div>

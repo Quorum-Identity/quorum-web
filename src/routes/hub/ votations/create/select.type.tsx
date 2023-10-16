@@ -8,7 +8,7 @@ const SelectTypeVotation: FunctionComponent<SwitchComponentChildrenType> = () =>
     return (
       <div>
           
-            <p>Because life identification and facial recognition cost money, quorum charges a small surcharge for each vote to foster its growth and security, a portion of which is earmarked for artificial intelligence, see the pricing page.</p>
+            <p>Te invitamos a leer nuestra seccion de precios, alli vas a encontrar nuestros diferentes planes para poder llevar acabo tus votaciones correctamente.</p>
           <Link style={{fontSize: '1.5rem', color:"rgb(77, 115, 131) !important"}} to="/pricing">Pricing</Link>
       
       </div>

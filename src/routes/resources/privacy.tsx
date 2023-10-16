@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 
 const PrivacyPolicy = () => {
     const [t,i18n] = useTranslation('global');
-
+    window.scrollTo(0, 0)
     return <>
         <Navbar t = {t} i18n={i18n}/>
         <div className="container mt2">

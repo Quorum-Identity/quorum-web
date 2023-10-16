@@ -29,8 +29,9 @@ const FooterApp = ({t,i18n}:any) => {
                 </div>
                 <div className="section">
                     <h1>{t("6754.p1")}</h1>
-                    <Link to="/privacy-rules"><p>{t("8741.p1")}</p></Link>
-                    <p>{t("4131.p1")}</p>
+                    <Link to="/privacy"><p>{t("8741.p1")}</p></Link>
+                    <Link to="/terms"><p>{t("4131.p1")}</p></Link>
+
                 </div>
 
                 
