@@ -271,7 +271,106 @@
     
       "6640": {
           "p1": "Perfil social ilimitado"
+       },
+       
+       "51345": {
+        "p1" : "Política de privacidad"
+       },
+
+       "31341" : { 
+        "p1" : "1. Recopilación de información"
+       },
+
+       "9801": {
+           "p1": "Cuando utiliza nuestra aplicación, podemos recopilar ciertos datos personales necesarios para el proceso KYC, como su nombre, dirección, fecha de nacimiento, número de identificación y una fotografía de su documento de identificación oficial. Esta información es esencial para verificar su identidad y garantizar que solo usted pueda acceder a nuestros servicios."
+       },
+
+       "1231": {
+           "p1" : "2. Uso de la Información"
+       },
+
+       "8781": {
+           "p1": "La información recopilada durante el proceso KYC se utilizará únicamente con el fin de verificar su identidad y garantizar la integridad y seguridad de nuestras operaciones. No compartiremos ni venderemos sus datos personales a terceros con fines de marketing o publicidad. "
+       }, 
+
+       "9810" : { 
+           "p1" : "3. Seguridad de los datos"
+       },
+
+       "9865": {
+           "p1" : "Tomamos medidas rigurosas para proteger sus datos personales contra el acceso no autorizado, la divulgación o la destrucción. Utilizamos medidas de seguridad técnicas y administrativas para garantizar que su información esté segura y confidencial"
+       },
+
+       "13566": {
+           "p1" : "4. Acceso de terceros"
+       },
+
+       "58161": {
+           "p1" : "Para llevar a cabo el proceso KYC, podemos compartir sus datos con entidades externas que brindan servicios de verificación y cumplimiento. Sin embargo, nos aseguramos de que estas entidades cumplan con estrictos estándares de privacidad y seguridad de datos"
+       },
+
+       "19286": {
+           "p1" : "5. Retención de datos"
+       },
+
+       "123851": {
+           "p1" : "Conservaremos sus datos personales durante el tiempo que sea necesario para cumplir con nuestras obligaciones legales y reglamentarias. Una vez que ya no sean necesarios, eliminaremos o anonimizaremos la información para proteger su privacidad"
+       },
+
+       "131111": {
+           "p1" : "6. Derechos del usuario"
+       },
+
+
+       "123125": {
+           "p1" : "Tiene derecho a acceder, corregir o eliminar sus datos personales que hemos almacenado. Si desea ejercer estos derechos o tiene alguna pregunta sobre nuestra Política de Privacidad, puede contactarnos a través de sopport@quorum.com "
+       },
+
+       "12347": {
+           "p1" : "7. Derechos del usuario"
+       },
+
+       "56144": {
+           "p1" :"Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento para reflejar cambios en nuestras prácticas de privacidad. Le recomendamos que la revise periódicamente para mantenerse informado sobre cómo protegemos su información. Al utilizar nuestra aplicación, usted acepta los términos y condiciones de esta Política de Privacidad. Si no está de acuerdo con estos términos, le pedimos que no utilice nuestros servicios."
+       },
+
+       "5131": {
+           "p1" : "Términos y condiciones"
+       },
+
+       "1257" : {
+        "p1" : "1. Privacidad de Datos"
+       }, 
+       "12356" : {
+        "p1" : "1.1. Compromiso de Privacidad Nos tomamos muy en serio la privacidad de tus datos. Garantizamos que tus datos personales no serán compartidos, vendidos ni divulgados a terceros sin tu consentimiento expreso, excepto en las circunstancias que se describen en nuestra Política de Privacidad. 1.2. Protección de Datos Implementamos medidas de seguridad y protección de datos para garantizar la confidencialidad y la integridad de la información que nos proporcionas."
+       }, 
+
+       "56743": {
+        "p1" : "2. Recopilación de Datos"
+       }, 
+
+       "214156": {
+           "p1" : "2.1. Información del usuario. Para utilizar nuestra plataforma, recopilaremos cierta información personal necesaria para brindarle nuestros servicios. Esta información se utiliza únicamente para los fines específicos de la plataforma y de acuerdo con nuestra Política de privacidad"
+
+       }, 
+
+       "5144": {
+           "p1" : "3. Responsabilidades de los Usuarios"
+       },
+
+       "11116": {
+        "p1" : "3.1. Uso Adecuado. Te comprometes a utilizar la plataforma de acuerdo con las leyes y regulaciones aplicables, así como con estos Términos y Condiciones. No debes utilizar la plataforma con fines ilegales o inapropiados."
+       },
+
+       "5672" : {
+        "p1" : "4. Cambios en los Términos y Condiciones"
+       },
+     
+       "4556" :{
+        "p1" :  "4.1. Actualizaciones. Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Cualquier cambio se publicará en la plataforma y entrará en vigencia inmediatamente. Te recomendamos revisar estos términos periódicamente."
        }
+
+
  
 
 
