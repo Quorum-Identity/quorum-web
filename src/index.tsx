@@ -17,6 +17,7 @@ import global_ita from './traslations/Ita/global.json'
 
 
 
+
 i18next.init( {
   interpolation : {escapeValue : false},
   lng : "es",

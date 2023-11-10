@@ -26,9 +26,9 @@ const NavbarHub = () => {
          }}
       >  
          <img width='100%' height='100%' src={Logo}/>
-         <MenuItem style={{zIndex: 1}} component={<Link to="/votations" />}>  <IonIcon name="ellipsis-vertical-outline" style={{marginRight: '.5rem' ,color: 'black'}}/><span style={{color: 'black'}}>Votations</span></MenuItem>
-         <MenuItem component={<Link to="/configuration"/>}> <IonIcon name="person-outline" style={{marginRight: '.5rem' ,color: 'black'}}/><span style={{color: 'black'}}>Configuration</span></MenuItem>
-         <MenuItem component={<Link to="/e-commerce" />}><IonIcon name="log-out-outline" style={{marginRight: '.5rem' ,color: 'brown'}}/><span style={{color: 'brown'}}>Log Out</span></MenuItem>
+         <MenuItem style={{zIndex: 1}} component={<Link to="/votations" />}>  <IonIcon name="file-tray-full-outline" style={{marginRight: '.5rem' ,color: 'black'}}/><span style={{color: 'black'}}>Votaciones</span></MenuItem>
+         <MenuItem component={<Link to="/configuration"/>}> <IonIcon name="person-outline" style={{marginRight: '.5rem' ,color: 'black'}}/><span style={{color: 'black'}}>Configuración</span></MenuItem>
+         <MenuItem component={<Link to="/e-commerce" />}><IonIcon name="log-out-outline" style={{marginRight: '.5rem' ,color: 'brown'}}/><span style={{color: 'brown'}}>Cerrar sesión</span></MenuItem>
          
       </Menu>
       </Sidebar>

@@ -4,14 +4,14 @@ import * as Icon from 'react-feather';
 import CardVotation from "../../components/card_votation";
 import IonIcon from "@reacticons/ionicons";
 import FooterApp from "../../components/footer/footer";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import {useTranslation} from 'react-i18next'
 import { Fade, JackInTheBox, Bounce} from "react-awesome-reveal";
 
 const Dashboard = () => {
   
   const [t,i18n] = useTranslation('global')
-
+  const navigate = useNavigate();
     return (
       <div className="" >
         <Navbar t = {t} i18n={i18n}/>
@@ -28,11 +28,11 @@ const Dashboard = () => {
               padding: '2rem',
               zIndex: '1'
             }}>
-              <h1 style={{color: '#47a347', fontSize: '2rem'}}>Blockchainnn</h1>
+              <h1 style={{color: '#47a347', fontSize: '2rem'}}>Blockchain</h1>
               <Fade>
                 <h1 style={{color: 'white', fontSize: '4rem'}}>{t("sub_navbar.parrafo")}</h1>
               </Fade>
-              <button className="btn btn-primary">{t("button_p.title")}</button>
+              <button onClick={() => navigate('/fq')} className="btn btn-primary">{t("button_p.title")}</button>
               <button className="btn btn-primary-full">{t("button_p2.title")}</button>
 
 
@@ -52,8 +52,10 @@ const Dashboard = () => {
             <div className="container w50 w100Responsive ">
               <h1 className="m1" style={{color: 'white'}}>{t("titulosection.h1")}</h1>
               <p className="m1 mt1" style={{color: 'white'}}>{t("121231.p1")}</p>
-              <button className="btn btn-primary-full"><IonIcon name="logo-google-playstore"/>{t("213981.p1")}</button>
-              <button className="btn btn-primary"><IonIcon name="logo-apple"/>{t("27651.p1")}</button>
+              <div className="displayFlex">
+              <a style={{marginTop: '1rem !important'}} href='https://play.google.com/' className="btn btn-primary-full mt2"><IonIcon name="logo-google-playstore"/>{t("213981.p1")}</a>
+              <a style={{marginTop: '1rem !important'}} href='https://www.apple.com/la/app-store/' className="btn btn-primary"><IonIcon name="logo-apple"/>{t("27651.p1")}</a>
+              </div>
             </div>
             <JackInTheBox className="animate__backInRight">
               <video  playsInline autoPlay muted loop><source src="https://static-content.regulaforensics.com/FACE%20SDK%2013%20Feb.mp4"/> Your browser does not support the video tag. </video>
@@ -62,7 +64,7 @@ const Dashboard = () => {
           
           <div className="container mt2">
               
-              <h1 className="m1 mt2" style={{color: 'black'}}>{t("12312312.p1")}</h1>
+              <h1 className="m1 mt2" style={{color: 'black', wordWrap: 'break-word'}}>{t("12312312.p1")}</h1>
               <p className="m1" style={{color: 'black'}}>{t("213125.p1")}</p>
           </div>
           <div className="presentation" style={{paddingTop: '3rem'}}>

@@ -19,7 +19,7 @@ const FooterApp = ({t,i18n}:any) => {
             <div className="footer-items">
                 <div className="section">
                     <h1>{t("21555.p1")}</h1>
-                    <p>{t("2456.p1")}</p>
+                    <p >{t("2456.p1")}</p>
                     <p>{t("12121.p1")}</p>
                 </div>
                 <div className="section">

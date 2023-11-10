@@ -54,7 +54,6 @@ const App = () =>  {
               
               
               //HUB
-              <Route path="/hub" element={<HomeHub/>}/>
               <Route path="/votations" element={<VotationsHub/>}/>
               <Route path="/votations-view" element={<ViewVotation/>}/>
 

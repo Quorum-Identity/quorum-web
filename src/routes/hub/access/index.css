@@ -9,3 +9,17 @@ background: radial-gradient(circle, #3d2858 0%, #211236 100%);
     margin: 2rem;
     box-shadow: 3px 1px 3px 1px rgba(0, 0, 0, 0.322);
 }
+
+
+@media  (max-width: 650px) {
+    .login{
+    margin: .5rem;
+  }
+
+  .w100responsiveCardLogin{
+    width: 70%;
+    margin: 0px !important;
+    padding: 1rem !important;
+  }
+  
+}

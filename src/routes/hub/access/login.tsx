@@ -31,7 +31,7 @@ const LoginView = () => {
     return (
         <div style={{margin: '1rem'}}>
             <div className="login w100 displayFlex displayBlockResponsive" style={{flexDirection: "row"}}>
-                <div  className="w50 " style={{marginRight: '2rem' ,overflow: "hideen", padding: '2rem'}}>
+                <div  className="w50 w100responsiveCardLogin" style={{marginRight: '2rem' ,overflow: "hideen", padding: '2rem'}}>
                     <IonIcon onClick={() => navigate('/', {replace: true})} style={{cursor: 'pointer',margin: '0rem', fontSize: '2rem'}} name="chevron-back-outline"/>
 
                     <h3 className="m1" style={{fontWeight: '300' ,fontSize: '3rem'}}> Sign In</h3>
@@ -47,7 +47,7 @@ const LoginView = () => {
                 <div style={{height: "auto"}} className="gradientBox w50 center w100Responsive">
                     
                     
-                    <img style={{filter: 'saturate(2)',marginTop: '5rem' }} width="350px" height="175px" alt="logo" src={logo}/>
+                    <img style={{filter: 'saturate(2)',marginTop: '5rem' }} width="100%"  alt="logo" src={logo}/>
                     <div className="w100">
                     <button className="btn btn-white">Get an account</button>
                     </div>
